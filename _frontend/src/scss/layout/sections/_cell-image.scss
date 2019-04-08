@@ -1,0 +1,44 @@
+.cell--image {
+  display: flex;
+
+  .cell {
+    &__picture {
+      flex: 1 0 100%;
+      max-width: 100%;
+      position: relative;
+    }
+  }
+
+  &.has-2-images,
+  &.has-4-images {
+    flex: 1 0 66%;
+    justify-content: space-between;
+
+    .cell {
+      &__picture {
+        flex: 1 0 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+      }
+    }
+  }
+
+  &.has-2-images {
+    align-items: center;
+  }
+
+  &.has-3-images {
+    align-items: center;
+    flex: 1 0 100%;
+
+    .cell {
+      &__picture {
+        flex: 1 0 calc(33.33% - 10px);
+        max-width: calc(33.33% - 10px);
+      }
+    }
+  }
+
+  &.has-4-images {
+    flex-wrap: wrap;
+  }
+}

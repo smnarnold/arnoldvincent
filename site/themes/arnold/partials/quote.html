@@ -1,0 +1,10 @@
+{{ if quote }}
+    <blockquote>
+        {{ quote }}
+        {{ if author }}
+            <footer>
+                <cite>{{ author }}</cite>
+            </footer>
+        {{ endif }}
+    </blockquote>
+{{ endif }}

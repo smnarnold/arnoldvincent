@@ -1,0 +1,22 @@
+.cp_embed_wrapper {
+  position: relative;
+  height: 0;
+  padding-bottom: 100%;
+  overflow: hidden;
+
+  iframe {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    height: calc(100% + 2px);
+    width: calc(100% + 2px) !important;
+  }
+
+  .side-by-side--media-landscape & {
+    padding-bottom: 56.25%; // 16/9
+  }
+
+  .side-by-side--media-portrait & {
+    padding-bottom: 140%; // 5/7
+  }
+}

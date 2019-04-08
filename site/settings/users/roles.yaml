@@ -1,0 +1,19 @@
+d32e14fb-08c9-44c2-aaf8-21200852bafd:
+  title: Admin
+  permissions:
+    - super
+editor:
+  title: Editor
+  slug: editor
+  permissions:
+    - 'cp:access'
+    - 'content:view_drafts_on_frontend'
+    - 'pages:view'
+    - 'pages:edit'
+    - 'pages:create'
+    - 'pages:delete'
+    - 'pages:reorder'
+    - 'globals:global:view'
+    - 'globals:global:edit'
+    - updater
+    - 'updater:update'

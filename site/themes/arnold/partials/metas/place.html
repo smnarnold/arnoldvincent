@@ -1,0 +1,7 @@
+<span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+  {{ if street_address }}<meta itemprop="streetAddress" content="{{street_address}}">{{ /if }}
+  {{ if address_locality }}<meta itemprop="addressLocality" content="{{address_locality}}">{{ /if }}
+  {{ if address_region }}<meta itemprop="addressRegion" content="{{address_region}}">{{ /if }}
+  {{ if address_country }}<meta itemprop="addressCountry" content="{{address_country}}">{{ /if }}
+  {{ if postal_code }}<meta itemprop="postalCode" content="{{postal_code}}">{{ /if }}
+</span>

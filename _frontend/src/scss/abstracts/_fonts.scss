@@ -1,0 +1,62 @@
+/**
+ * fonts
+ * =====
+ */
+
+// sangbleu
+
+@font-face {
+  font-family: 'sang_bleu_kingdom';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url('../fonts/sangbleu/SangBleuKingdom-Regular-Web/S/SangBleuKing-Web.woff2') format('woff2'),
+    url('../fonts/sangbleu/SangBleuKingdom-Regular-Web/S/SangBleuKing-Web.woff') format('woff');
+}
+
+// visuelt
+
+@font-face {
+  font-family: 'visuelt';
+  font-style: normal;
+  font-weight: 300;
+  src:
+    url('../fonts/visuelt/Visuelt-Light-Web.woff2') format('woff2'),
+    url('../fonts/visuelt/Visuelt-Light-Web.woff') format('woff');
+}
+
+//@font-face {
+//  font-family: 'visuelt';
+//  font-style: italic;
+//  font-weight: 300;
+//  src:
+//    url('../fonts/visuelt/Visuelt-LightItalic-Web.woff2') format('woff2'),
+//    url('../fonts/visuelt/Visuelt-LightItalic-Web.woff') format('woff');
+//}
+
+@font-face {
+  font-family: 'visuelt';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url('../fonts/visuelt/Visuelt-Regular-Web.woff2') format('woff2'),
+    url('../fonts/visuelt/Visuelt-Regular-Web.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'visuelt';
+  font-style: italic;
+  font-weight: 400;
+  src:
+    url('../fonts/visuelt/Visuelt-Italic-Web.woff2') format('woff2'),
+    url('../fonts/visuelt/Visuelt-Italic-Web.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'visuelt';
+  font-style: normal;
+  font-weight: 500;
+  src:
+    url('../fonts/visuelt/Visuelt-Medium-Web.woff2') format('woff2'),
+    url('../fonts/visuelt/Visuelt-Medium-Web.woff') format('woff');
+}

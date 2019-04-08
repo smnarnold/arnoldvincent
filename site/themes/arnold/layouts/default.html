@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}">
+<head>
+  <!-- Metas -->
+  {{ partial:metas/page }}
+
+  <!-- Favicons (Generated with RealFaviconGenerator) -->
+  {{ partial:metas/favicons }}
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto+Mono:100,300&amp;subset=latin-ext" rel="stylesheet">
+
+  <!-- CSS -->
+  {{ theme:css src="main" tag="true" }}
+  <style>{{ partial:themes }}</style>
+</head>
+<body itemscope="" itemtype="http://schema.org/WebPage">
+
+  <!-- Site Header -->
+  {{ partial:layout/site-header }}
+
+  <!-- Site Main -->
+  <main data-page="Default" itemprop="mainContentOfPage">
+      {{ template_content }}
+  </main>
+
+  <!-- Site Footer -->
+  {{ partial:layout/site-footer }}
+
+  <!-- JS -->
+  <script src="//code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  {{ theme:js src="app" tag="true" }}
+</body>
+</html>

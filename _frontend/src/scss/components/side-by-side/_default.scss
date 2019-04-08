@@ -1,0 +1,214 @@
+.side-by-side {
+  $paddingH: 25px;
+
+  position: relative;
+  width: 100%;
+  //background: url(https://i.imgur.com/H4uA0fG.jpg);
+  padding: 3.6rem 0;
+
+  &__bg {
+    display: none;
+  }
+
+  &__container {
+    display: flex;
+    max-width: $containerWidth;
+    margin: 0 auto;
+  }
+
+  &__wrapper {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  &__title,
+  &__text,
+  &__media {
+    padding: 0 $gutter;
+  }
+
+  &__title {
+    @extend %creation-title;
+
+    p {
+      // If cms output p tag remove undesired margin
+      margin: 0;
+    }
+  }
+
+  &__text,
+  &__media {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  &__text {
+    padding-top: 3.6rem;
+    order: 3;
+
+    p,
+    blockquote {
+      margin: 2.4rem 0;
+    }
+
+    blockquote {
+      @extend %blockquote;
+    }
+
+    a {
+      @extend %href;
+    }
+
+    &__wrapper {
+      @extend %children-margin;
+    }
+
+    .side-by-side__title {
+      padding: 0;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  &__media {
+    padding-top: 3.6rem;
+    order: 2;
+
+    &[style*="background-color"] {
+      padding-top: 0;
+      padding-bottom: 3.6rem;
+    }
+  }
+
+  &__aside {
+    display: none;
+    font-family: font(sans-serif);
+  }
+
+  &__type {
+    @extend %small-caps;
+  }
+
+  &__tag {
+    @extend %tag;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .side-by-side {
+    padding: 8.6rem 0;
+
+    &__bg {
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      pointer-events: none;
+
+      &--media {
+        right: 0;
+      }
+
+      &--text {
+        left: 0;
+      }
+    }
+
+    &__aside {
+      order: 1;
+    }
+
+    &__wrapper,
+    &__text {
+      order: 2;
+    }
+
+    &__text,
+    &__media {
+      padding: 0 40px;
+      flex: 1 1 50%;
+      max-width: 50%;
+    }
+
+    &__media {
+      order: 3;
+      text-align: right;
+
+      &[style*="background-color"] {
+        padding-bottom: 0;
+      }
+    }
+
+    &:nth-child(even) {
+      .side-by-side {
+        &__bg {
+          left: 0;
+          right: auto;
+
+          &--media {
+            left: 0;
+            right: auto;
+          }
+
+          &--text {
+            left: auto;
+            right: 0;
+          }
+        }
+
+        &__wrapper {
+          order: 1;
+        }
+
+        &__text {
+          order: 3;
+        }
+
+        &__media {
+          order: 2;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .side-by-side {
+    &__bg--media {
+      width: calc(50% + 100px);
+    }
+
+    &__bg--text {
+      width: calc(50% - 100px);
+    }
+
+    &__aside {
+      order: 2;
+      flex: 1 1 100px;
+      min-width: 100px;
+      max-width: 100px;
+      display: block;
+
+      + .side-by-side__bg {
+        width: calc(50% + 50px);
+      }
+    }
+
+    &__text {
+      flex: 1 1 calc(50% - 100px);
+      max-width: calc(50% - 100px);
+    }
+
+    &__media {
+      flex: 1 1 calc(50% + 100px);
+      max-width: calc(50% + 100px);
+    }
+  }
+}

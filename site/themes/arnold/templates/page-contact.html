@@ -1,0 +1,61 @@
+<div data-page="Contact">
+
+  <!-- Hero -->
+  {{ partial:components/hero }}
+
+  <section class="section theme theme--grey-light">
+    <div class="container container--small">
+      <div class="row">
+        {{ content }}
+      </div>
+
+      {{ form:create in="contact" attr="class:form" }}
+        <div class="row">
+
+          {{ if errors }}
+            <div class="col-12">
+              <div class="alert alert--danger">
+                {{ errors }}
+                  {{ value }}<br>
+                {{ /errors }}
+              </div>
+            </div>
+          {{ /if }}
+
+          {{ if success }}
+            <div class="col-12">
+              <div class="alert alert--success">
+                Form was submitted successfully.
+              </div>
+            </div>
+          {{ /if }}
+
+          <div class="col-12 col-md-6">
+            <div class="form__group">
+              <label class="form__label">Name</label>
+              <input class="form__control" type="text" name="name" value="{{ old:name }}" />
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="form__group">
+              <label class="form__label">Email</label>
+              <input class="form__control" type="text" name="email" value="{{ old:email }}" />
+            </div>
+          </div>
+
+          <div class="col-12 col-md-12">
+            <div class="form__group">
+              <label class="form__label">Comment</label>
+              <textarea class="form__control" name="comment">{{ old:comment }}</textarea>
+            </div>
+          </div>
+        </div>
+
+        <button class="form__submit button button--default">Submit</button>
+
+      {{ /form:create }}
+    </div>
+  </section>
+
+</div>

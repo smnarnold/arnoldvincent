@@ -1,0 +1,36 @@
+html,
+body {
+  background: #fff;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+html {
+  font: 300 10px/1.4 font(serif);
+}
+
+body {
+  font-size: 1.6rem; // 16px
+  line-height: 1.5;
+  padding-top: $site-header-height;
+}
+
+main {
+  position: relative;
+  min-height: 100vh;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.sr-only {
+  @extend %sr-only;
+}
+
+// Large devices (desktops, 1380px and up)
+@media (min-width: 1380px) {
+  body {
+    padding-top: 0;
+  }
+}

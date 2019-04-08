@@ -1,0 +1,127 @@
+.hero {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 290px;
+  padding: 40px 35px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  // components
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  // elements
+
+  &__bg {
+    animation: zoom-in ease 2s 1 forwards;
+    backface-visibility: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &__tagline {
+    display: block;
+    font-style: normal;
+    margin: 0 auto;
+    max-width: map-get($grid-breakpoints, md);
+    padding-bottom: 20px;
+  }
+
+  &__title {
+    display: block;
+    font: 500 4rem/1 font(serif);
+    margin: 0;
+  }
+
+  &__subtitle,
+  &__author {
+    padding-top: 20px;
+  }
+
+  &__subtitle {
+    font-size: 1.8rem;
+    margin: 0 auto;
+    max-width: map-get($grid-breakpoints, md);
+  }
+
+  &__breadcrumb {
+    display: none;
+    left: 0;
+    opacity: 0.7;
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+
+  // modifiers
+
+  &--small {
+    min-height: 200px;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@include media-breakpoint-up(sm) {
+  .hero {
+    &__title {
+      font-size: 4.5rem;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-up(md) {
+  .hero {
+    min-height: 400px;
+    padding: 80px 0;
+
+    &__tagline {
+      font-size: 1.6rem;
+    }
+
+    &__title {
+      font-size: 5rem;
+    }
+
+    &__breadcrumb {
+      display: block;
+    }
+
+    &--small {
+      min-height: 260px;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-up(lg) {
+  .hero {
+    &__title {
+      font-size: 5.5rem;
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@include media-breakpoint-up(xl) {
+  .hero {
+    &__title {
+      font-size: 6rem;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{{ collection:websites as="website" sort="{preview-websites_sort}" limit="{preview-websites_limit}" }}
+    {{ website }}
+        {{# ex: image, video, codepen #}}
+        {{ partial src="medias/{{ post_featured_media }}" }}
+
+        {{ partial src="medias/metas/website_metas" }}
+        
+        {{# ex: side-by-side-landscape, side-by-side-portrait #}}
+        {{ partial src="components/{{ post_featured_template }}" }}
+    {{ /website }}
+{{ /collection:websites }}
+
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>

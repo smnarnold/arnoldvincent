@@ -1,0 +1,7 @@
+<div data-page="Hub">
+  {{ collection:pictures as="picture" sort="picture_date:desc" }}
+    {{ picture }}
+      {{ partial src="pictures/{picture_orientation}" }}
+    {{ /picture }}
+  {{ /collection:pictures }}
+</div>

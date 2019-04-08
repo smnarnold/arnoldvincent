@@ -1,0 +1,20 @@
+<div class="cell cell--image {{ if image | count > 1 }}has-{{image | count}}-images{{ /if }}">
+    {{ if image | count == 1 && size == "cover" }}
+        {{ assets:image }}
+            <img src="{{ url }}" alt="{{ alt }}" class="object-fit" />
+        {{ /assets:image }}
+    {{ else }}
+        {{ assets:image }}
+            <picture class="cell__picture">
+                <source srcset="{{ glide:url width='580' }}" media="(max-width: 320px) and (min-resolution: 2dppx)">
+                <source srcset="{{ glide:url width='690' }}" media="(max-width: 375px) and (min-resolution: 2dppx)">
+                <source srcset="{{ glide:url width='1000' }}" media="(max-width: 500px) and (min-resolution: 2dppx)">
+                <source srcset="{{ glide:url width='1380' }}" media="(min-resolution: 2dppx)">
+                <source srcset="{{ glide:url width='768' }}">
+                <img src="{{ glide:url width='768' }}" alt="{{ alt }}" />
+            </picture>
+        {{ /assets:image }}
+    {{ /if }}
+</div>
+
+

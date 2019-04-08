@@ -1,0 +1,13 @@
+{{ if title }}<meta itemprop="name" content="{{ title }}">{{ endif }}
+{{ if first_name }}<meta itemprop="givenName" content="{{ first_name }}">{{ endif }}
+{{ if last_name }}<meta itemprop="familyName" content="{{ last_name }}">{{ endif }}
+{{ if gender }}<meta itemprop="gender" content="{{ gender }}">{{ endif }}
+{{ if description }}<meta itemprop="description" content="{{ description }}">{{ endif }}
+{{ if image }}<meta itemprop="image" content="{{ glide:image:0 absolute="true" }}">{{ endif }}
+{{ job_title }}
+  <meta itemprop="jobTitle" content="{{ value }}">
+{{ /job_title }}
+{{ partial:metas/social_medias }} {{ if wikipedia }}
+<meta itemprop="sameAs" content="{{ wikipedia }}">{{ /if }} {{ if imdb }}
+<meta itemprop="sameAs" content="{{ imdb }}">{{ /if }} {{ if website }}
+<meta itemprop="sameAs" content="{{ website }}">{{ /if }}

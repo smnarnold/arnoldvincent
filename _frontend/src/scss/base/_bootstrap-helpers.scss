@@ -1,0 +1,43 @@
+body {
+  &::after {
+    @extend %sr-only;
+
+    content: "xs";
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@include media-breakpoint-up(sm) {
+  body {
+    &::after {
+      content: "sm";
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-up(md) {
+  body {
+    &::after {
+      content: "md";
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-up(lg) {
+  body {
+    &::after {
+      content: "lg";
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@include media-breakpoint-up(xl) {
+  body {
+    &::after {
+      content: "xl";
+    }
+  }
+}

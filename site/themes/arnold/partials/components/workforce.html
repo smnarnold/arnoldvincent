@@ -1,0 +1,12 @@
+
+{{ if post_workforce }}
+  <div class="workforce">
+    {{ post_workforce sort="job_title:desc" }}
+      <strong class="workforce__role">{{ job_title }}</strong>:
+      {{ relate:persons }}
+        <span class="workforce__person">{{ title }}</span>{{ if count < total_results }}, {{ /if }}
+      {{ /relate:persons }}
+      {{ if index < total_results }} | {{ /if}}
+    {{ /post_workforce }}
+  </div>
+{{ /if }}

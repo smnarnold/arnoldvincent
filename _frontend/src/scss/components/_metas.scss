@@ -1,0 +1,53 @@
+.post {
+  &__metas {
+    position: relative;
+    display: inline-block;
+    font-family: font(sans-serif);
+    text-align: left;
+    margin: 3.6rem 0 0;
+    padding: 0 3rem 0 1.8rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1px;
+      height: 100%;
+      background-color: currentColor;
+      opacity: 0.5;
+    }
+
+    a {
+      color: currentColor;
+      font-style: italic;
+      text-decoration: none;
+    }
+  }
+
+  .side-by-side--media-landscape.side-by-side--media-large & {
+    &__metas {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+  }
+
+  .side-by-side--media-portrait & {
+    &:nth-child(odd) {
+      &__metas {
+        float: right;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .post {
+    .side-by-side--media-large & {
+      &__metas {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}

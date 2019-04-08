@@ -1,0 +1,13 @@
+{{ section:post_metas }}
+    <figcaption class="post__metas">
+        {{ if post_url }}
+          <a href="{{ post_url }}" class="picture__city">{{ post_url | cleanurl | remove_right:/ }}</a><br>
+        {{ /if }}
+        {{ if post_client }}
+          {{ relate:post_client }}
+          <strong class="picture__place">{{ title }}</strong><br>
+          {{ /relate:post_client }}
+        {{ /if }}
+        <time datetime="{{ date format='Y-m-d' }}" class="picture__date" itemprop="dateCreated">{{ date format="Y" }}</time>
+    </figcaption>
+{{ /section:post_metas }}

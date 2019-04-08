@@ -1,0 +1,26 @@
+<div data-page="Post">
+
+  <!-- Hero -->
+  {{# {{ partial:components/hero }} #}}
+
+  <!-- Anchor Menu -->
+  {{# {{ partial:components/anchors-menu }} #}}
+
+  <!-- Other Components -->
+  {{ components }}
+    {{ partial src="components/{type}" }}
+  {{ /components }}
+
+  <!-- Next post -->
+  {{# <div class="section theme--white">
+    <div class="container">
+      <h2 class="section__title">Read next</h2>
+      {{ collection:next in="blog" limit="1" sort="featured|date:desc" wrap="true" as="posts" }}
+        {{ posts }}
+          {{ partial:cards/featured-post }}
+        {{ /posts }}
+      {{ /collection:next }}
+    </div>
+  </div> #}}
+
+</div>

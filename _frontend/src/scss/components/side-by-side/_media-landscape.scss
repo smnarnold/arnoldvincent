@@ -1,0 +1,52 @@
+.side-by-side--media-landscape {
+  &.side-by-side {
+    &__title {
+      flex: 2 1 100%;
+      order: 1;
+    }
+  }
+}
+
+// Medium devices (tablets, 992px and up)
+@include media-breakpoint-up(lg) {
+  .side-by-side--media-landscape {
+    $paddingH: 40px;
+
+    .side-by-side {
+      &__title {
+        padding: 0 $paddingH;
+        padding: 0 calc(50% + #{$paddingH}) 0 $paddingH;
+      }
+    }
+
+    &:nth-child(even) {
+      .side-by-side {
+        &__title {
+          padding: 0 $paddingH 0 calc(50% + #{$paddingH});
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 1200px and up)
+@include media-breakpoint-up(xl) {
+  .side-by-side--media-landscape {
+    $paddingH: 40px;
+    $asideW: 100px;
+
+    .side-by-side {
+      &__title {
+        padding: 0 calc(50% + #{$paddingH} + #{$asideW}) 0 $paddingH;
+      }
+    }
+
+    &:nth-child(even) {
+      .side-by-side {
+        &__title {
+          padding: 0 $paddingH 0 calc(50% + #{$paddingH} + #{$asideW});
+        }
+      }
+    }
+  }
+}

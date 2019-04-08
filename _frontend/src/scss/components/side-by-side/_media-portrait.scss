@@ -1,0 +1,11 @@
+@include media-breakpoint-up(lg) {
+  .side-by-side-media--portrait {
+    &:nth-child(odd) {
+      .side-by-side {
+        &__metas {
+          float: right;
+        }
+      }
+    }
+  }
+}

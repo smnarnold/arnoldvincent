@@ -1,0 +1,77 @@
+.section {
+  display: block;
+  overflow: hidden;
+  padding: 20px 0;
+  position: relative;
+  width: 100%;
+
+  // elements
+
+  &__title {
+    display: block;
+    font: normal 500 1.6rem/1 font(sans-serif);
+    margin: 20px 0 30px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+
+    &:hover {
+      .section__anchor {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__anchor {
+    color: currentcolor;
+    margin-left: -22px;
+    opacity: 0;
+    text-decoration: none;
+
+    svg {
+      fill: currentColor;
+
+      &:hover {
+        opacity: 0.4;
+      }
+    }
+  }
+
+  &__super {
+    @extend %super;
+
+    display: block;
+    text-align: center;
+  }
+
+  &__introduction {
+    display: block;
+    text-align: center;
+  }
+
+  &__legend {
+    @extend %source;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-up(md) {
+  .section {
+    &__super {
+      margin-bottom: 60px;
+      margin-top: 60px;
+    }
+
+    &__cells {
+      display: flex;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-up(lg) {
+  .section {
+    padding: 40px 0;
+  }
+}

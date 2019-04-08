@@ -1,0 +1,19 @@
+<section class="organizations" style="color: {{preview-organizations_text_color}};">
+    {{ if preview-organizations_background_color }}
+        <span class="organizations__bg" style="background-color: {{ preview-organizations_background_color }};"></span>
+    {{ /if }}
+
+    <div class="organizations__container">
+        {{ if preview-organizations_introduction }}
+            <div class="organizations__introduction">{{ preview-organizations_introduction | markdown }}</div>
+        {{ /if }}
+
+        <ul class="organizations__list">
+            {{ relate:preview-organizations_list as="organization" sort="{preview-organizations_sort}" }}
+                {{ organization }}
+                    <li class="organizations__item">{{ partial src="organization" }}</li>
+                {{ /organization }}
+            {{ /relate:preview-organizations_list }}
+        </ul>
+    </div>
+</section>

@@ -1,0 +1,19 @@
+/**
+ * functions
+ * =========
+ */
+
+// colors
+@function palette($color, $tone: 'base') {
+  @return map-get(map-get($palettes, $color), $tone);
+}
+
+// fonts
+@function font($style: 'sans-serif') {
+  @return map-get($fonts, $style);
+}
+
+// gutters
+@function gutter($gutter, $dir: 'base') {
+  @return map-get(map-get($gutters, $gutter), $dir);
+}

@@ -1,0 +1,13 @@
+{{ section:post_featured_media }}
+    <p data-height="400" 
+        {{ if post_featured_codepen_theme }}data-theme-id="{{ post_featured_codepen_theme }}" {{ /if }}
+        {{ if post_featured_codepen_id }}data-slug-hash="{{ post_featured_codepen_id }}"{{ /if }} 
+        data-default-tab="result" 
+        data-user="sarnold" 
+        class="codepen">Voir le <a href="https://codepen.io">CodePen</a> 
+        {{ if post_featured_codepen_id }}
+            <a href="https://codepen.io/sarnold/pen/{{ post_featured_codepen_id }}/">{{ title }}</a>
+        {{ /if }} 
+        de Simon Arnold (<a href="https://codepen.io/sarnold">@sarnold</a>).
+    </p>
+{{ /section:post_featured_media }}

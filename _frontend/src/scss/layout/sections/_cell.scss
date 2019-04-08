@@ -1,0 +1,42 @@
+.cell {
+  flex: 1 0 0;
+  max-width: 100%;
+  min-height: 1px;
+  min-width: 33.33%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  position: relative;
+  width: 100%;
+
+  &__wrapper {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  &__title {
+    font-family: font(serif);
+    font-size: 5rem;
+    font-weight: normal;
+    margin: 20px auto;
+    max-width: 1200px;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 768px;
+    width: 100%;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-up(md) {
+  .cell {
+    padding: 20px;
+
+    &__text {
+      column-width: 400px;
+    }
+  }
+}

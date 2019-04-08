@@ -1,0 +1,26 @@
+{{ section:post_featured_media }}
+    {{ assets:post_featured_photography_asset }}
+        <picture class="picture">
+            <source srcset="{{ glide:url width='580' }}" media="(max-width: 320px) and (min-resolution: 2dppx)">
+            <source srcset="{{ glide:url width='690' }}" media="(max-width: 375px) and (min-resolution: 2dppx)">
+            <source srcset="{{ glide:url width='1000' }}" media="(max-width: 500px) and (min-resolution: 2dppx)">
+            <source srcset="{{ glide:url width='1380' }}" media="(min-resolution: 2dppx)">
+            <source srcset="{{ glide:url width='768' }}">
+            <img src="{{ glide:url width='768' }}" alt="{{ alt }}" itemprop="contentUrl" />
+        </picture>
+    {{ /assets:post_featured_photography_asset }}
+{{ /section:post_featured_media }}
+
+
+
+{{ section:post_featured_aside }}
+    {{ if tags }}
+        <aside class="side-by-side__aside">
+            <strong class="side-by-side__type">{{ if post_featured_photography_subject }}Portrait{{ else }}Paysage{{ /if }}</strong><br>
+            
+            {{ tags }}
+                <a href="{{ url }}" class="side-by-side__tag">{{ title }}</a>
+            {{ /tags }}
+        </aside>
+    {{ /if }}
+{{ /section:post_featured_aside }}

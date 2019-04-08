@@ -1,0 +1,40 @@
+/**
+ * variables
+ * =========
+ */
+
+$s: 0.3s;
+$containerWidth: 1200px;
+$gutter: 25px;
+
+$palettes: (
+  black: (
+    base: #000,
+  ),
+  grey: (
+    x-light: #ebebeb,
+    light: #bfbfbf,
+    base: #7f7f7f,
+    dark: #404040,
+    x-dark: #373737,
+  ),
+  white: (
+    base: #fff,
+  ),
+  pink: (
+    base: #eac7c2,
+    highlight: #f694c1,
+  ),
+);
+
+$fonts: (
+  sans-serif: #{ helvetica, arial, sans-serif },
+  serif: #{ 'Roboto Slab', serif },
+  alt: #{ 'Roboto Mono', helvetica, arial, sans-serif },
+);
+
+$site-header-height: calc(46px + 0.9vw);
+
+@include media-breakpoint-up(lg) {
+  $gutter: 40px;
+}

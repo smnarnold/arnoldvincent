@@ -1,0 +1,58 @@
+################################
+###  macOS                   ###
+################################
+
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+################################
+###  Windows                 ###
+################################
+
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+################################
+###  JetBrains IDEs          ###
+################################
+.idea
+
+################################
+###  Sublime Text            ###
+################################
+*.sublime-workspace
+
+################################
+###  Visual Studio Code      ###
+################################
+.vscode
+
+################################
+###  Frontend                ###
+################################
+_frontend/node_modules/
+_frontend/fractal/build/
+site/themes/sidlee/css/main.css
+site/themes/sidlee/js/app.js
+
+################################
+###  Statamic                ###
+################################
+.env
+local/cache/*
+local/storage/*
+local/temp/*
+installer.php
