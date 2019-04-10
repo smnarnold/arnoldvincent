@@ -1,8 +1,57 @@
-title: Default Globals
+title: 'Default Globals'
 hide: true
-fields:
-  site_name:
-    type: text
-    display: Website Name
-    instructions: The name of your website
-    localizable: true
+sections:
+  main:
+    display: Main
+    fields:
+      site_name:
+        type: text
+        display: 'Nom du site'
+        instructions: 'Nom affiché dans le menu'
+        default: 'Vincent Arnold'
+        width: 50
+      highlight_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        instructions: 'Coleur des liens et des états survolés'
+        width: 50
+        display: 'Couleur d''accent'
+      main_menu:
+        buttons:
+          - bold
+          - italic
+          - underline
+          - strikethrough
+          - anchor
+        style: sans
+        spellcheck: false
+        allow_source: true
+        allow_internal_links: true
+        link_noopener: false
+        link_noreferrer: false
+        target_blank: false
+        semantic_elements: false
+        restrict_assets: false
+        type: bard
+        display: Menu
+        instructions: 'Menu apparaissant dans l''entête du site'
+      main_footer:
+        buttons:
+          - bold
+          - italic
+          - underline
+          - anchor
+        style: sans
+        spellcheck: false
+        allow_source: true
+        allow_internal_links: true
+        link_noopener: false
+        link_noreferrer: false
+        target_blank: false
+        semantic_elements: true
+        restrict_assets: false
+        type: bard
+        display: 'Pied de page'
+taxonomies: true

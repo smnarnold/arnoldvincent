@@ -7,12 +7,13 @@
   <!-- Favicons (Generated with RealFaviconGenerator) -->
   {{ partial:metas/favicons }}
 
-  <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto+Mono:100,300&amp;subset=latin-ext" rel="stylesheet">
-
   <!-- CSS -->
   {{ theme:css src="main" tag="true" }}
-  <style>{{ partial:themes }}</style>
+  <style>
+    :root {
+      --highlight: {{ highlight_color }};
+    }
+  </style>
 </head>
 <body itemscope="" itemtype="http://schema.org/WebPage">
 

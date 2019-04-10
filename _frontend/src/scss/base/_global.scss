@@ -1,7 +1,7 @@
 html,
 body {
   background: #fff;
-  height: 100%;
+  font-family: Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -13,15 +13,13 @@ html {
 
 body {
   font-size: 1.6rem; // 16px
-  line-height: 1.5;
+  line-height: 1.8;
   padding-top: $site-header-height;
 }
 
 main {
   position: relative;
-  min-height: 100vh;
   z-index: 1;
-  background-color: #fff;
 }
 
 .sr-only {
