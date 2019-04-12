@@ -1,0 +1,44 @@
+taxonomies:
+  tags: true
+title: Person
+hide: true
+sections:
+  main:
+    display: Main
+    fields:
+      first_name:
+        type: text
+        display: Prénom
+        width: 25
+      last_name:
+        type: text
+        display: Nom
+        width: 25
+      nickname:
+        type: text
+        width: 25
+        display: 'Nom d''artiste'
+      gender:
+        type: radio
+        display: Genre
+        options:
+          male: Homme
+          female: Femme
+        inline: false
+        width: 25
+        default: male
+      image:
+        type: assets
+        display: Image
+        container: main
+        folder: persons
+        restrict: true
+      social_medias:
+        type: partial
+        display: 'Social Medias'
+        fieldset: social_medias_partial
+      website:
+        type: text
+        display: 'Site web'
+        width: 50
+        validate: url

@@ -1,0 +1,19 @@
+taxonomies:
+  tags: true
+title: 'Partial - Components'
+sections:
+  main:
+    display: Main
+    fields:
+      components:
+        type: replicator
+        display: Components
+        sets:
+          Liste illustrations:
+            display: ''
+            fields:
+              preview-illustrations:
+                fieldset: preview-illustrations
+                type: partial
+                display: 'Liste illustrations'
+hide: true

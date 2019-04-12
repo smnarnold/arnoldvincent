@@ -1,0 +1,23 @@
+sections:
+  main:
+    display: Main
+    fields:
+      preview-pictures_sort:
+        options:
+          'date:desc': Newest
+          'date:asc': Oldest
+          'title:asc': 'Name (A-Z)'
+          'title:desc': 'Name (Z-A)'
+          random: Random
+        type: select
+        instructions: 'What''s the items order?'
+        width: 33
+        display: Sort
+      preview-pictures_limit:
+        type: integer
+        instructions: 'How many items displayed? _(0 = Show all)_'
+        width: 33
+        display: Limit
+        default: '2'
+taxonomies: false
+title: 'Liste illustrations'

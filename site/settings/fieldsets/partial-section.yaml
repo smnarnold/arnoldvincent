@@ -1,0 +1,34 @@
+sections:
+  main:
+    display: Main
+    fields:
+      section-title:
+        type: text
+        width: 50
+        display: Title
+        localizable: true
+      section-container:
+        options:
+          container: default
+          container-fluid: 'full width'
+          'container container--small': smaller
+        type: select
+        width: 50
+        display: Container
+        default: container
+      section-cells:
+        fieldset: partial-cells
+        type: partial
+        display: Cells
+        instructions: 'Maximum 2'
+  footer:
+    display: Footer
+    fields:
+      legend:
+        cheatsheet: true
+        restrict_assets: false
+        type: markdown
+        display: Legend
+taxonomies: true
+title: 'Partial - Section'
+hide: true

@@ -1,0 +1,23 @@
+taxonomies:
+  tags: true
+title: 'Partial - Social medias'
+hide: true
+sections:
+  main:
+    display: Main
+    fields:
+      facebook:
+        type: text
+        display: Facebook
+        width: 50
+        validate: url
+      instagram:
+        type: text
+        display: Instagram
+        width: 50
+        validate: url
+      Behance:
+        type: text
+        display: Behance
+        width: 50
+        validate: url

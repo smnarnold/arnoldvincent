@@ -1,0 +1,21 @@
+sections:
+  main:
+    display: Main
+    fields:
+      image:
+        type: assets
+        display: Image
+        container: main
+        folder: clients
+        restrict: true
+      social_medias:
+        fieldset: social_medias_partial
+        type: partial
+        display: 'Médias sociaux'
+      website:
+        type: text
+        display: Site web
+        width: 50
+        validate: url
+taxonomies: true
+title: Client

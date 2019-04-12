@@ -75,7 +75,7 @@
   transition: color $s linear;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0.15em;
     left: 0;

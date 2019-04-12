@@ -1,0 +1,34 @@
+sections:
+  main:
+    display: Main
+    fields:
+      image:
+        container: main
+        folder: /
+        restrict: false
+        max_files: 4
+        mode: grid
+        type: assets
+        display: Image
+      orientation:
+        options:
+          landscape: Landscape
+          portrait: Portrait
+          square: Square
+        inline: true
+        type: radio
+        width: 66
+        display: Orientation
+        default: landscape
+      size:
+        options:
+          contain: Contain
+          cover: Cover
+        inline: true
+        type: radio
+        width: 33
+        display: Size
+        default: contain
+taxonomies: true
+title: 'Partial - Cell - Image'
+hide: true

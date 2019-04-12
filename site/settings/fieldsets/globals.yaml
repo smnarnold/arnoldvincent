@@ -7,16 +7,29 @@ sections:
       site_name:
         type: text
         display: 'Nom du site'
-        instructions: 'Nom affiché dans le menu'
+        instructions: 'Nom affiché sur les réseau sociaux, dans l''onglet du navigateur, etc.'
         default: 'Vincent Arnold'
-        width: 50
+        width: 25
+      main_logo:
+        type: textarea
+        width: 25
+        display: logo
+      main_owner:
+        max_items: '1'
+        sort: 'last_name:asc'
+        label: '{{ title }}'
+        collection:
+          - personnes
+        type: collection
+        width: 25
+        display: Propriétaire
       highlight_color:
         format: hex
         control: hue
         show_opacity: false
         type: colorpicker
         instructions: 'Coleur des liens et des états survolés'
-        width: 50
+        width: 25
         display: 'Couleur d''accent'
       main_menu:
         buttons:
@@ -37,6 +50,8 @@ sections:
         type: bard
         display: Menu
         instructions: 'Menu apparaissant dans l''entête du site'
+        localizable: true
+        width: 50
       main_footer:
         buttons:
           - bold
@@ -54,4 +69,6 @@ sections:
         restrict_assets: false
         type: bard
         display: 'Pied de page'
+        localizable: true
+        width: 50
 taxonomies: true

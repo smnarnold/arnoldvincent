@@ -1,5 +1,10 @@
 ---
 posts: 3
+components:
+  -
+    type: 'Liste illustrations'
+    preview-pictures_sort: 'date:desc'
+    preview-pictures_limit: 2
 title: Accueil
 template: home
 fieldset: home

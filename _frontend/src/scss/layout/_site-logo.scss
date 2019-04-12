@@ -2,4 +2,10 @@
   color: var(--highlight);
   font-weight: bold;
   text-decoration: none;
+
+  br {
+    &:last-of-type {
+      display: none;
+    }
+  }
 }

@@ -1,0 +1,26 @@
+sections:
+  main:
+    display: Main
+    fields:
+      cell-title:
+        type: text
+        display: Title
+        localizable: true
+        width: 66
+      cell-align:
+        options:
+          left: Left
+          center: Center
+        inline: true
+        type: radio
+        width: 33
+        display: Align
+        default: left
+      cell-content:
+        settings: Standard
+        restrict_assets: false
+        type: redactor
+        display: Content
+taxonomies: true
+title: 'Partial - Cell - Text'
+hide: true
