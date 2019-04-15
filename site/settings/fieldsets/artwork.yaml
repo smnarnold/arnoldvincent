@@ -1,0 +1,76 @@
+sections:
+  main:
+    display: Main
+    fields:
+      artwork_type:
+        options:
+          mural: Murale
+          painting: Peinture
+          illustration: Illustration
+        type: select
+        width: 33
+        display: Type
+      artwork_clients:
+        max_items: '4'
+        sort: 'titler:asc'
+        label: '{{ title }}'
+        collection:
+          - clients
+          - personnes
+        mode: tags
+        type: collection
+        width: 33
+        display: Client(s)
+      artwork_feat:
+        sort: 'title:asc'
+        label: '{{ title }}'
+        collection:
+          - personnes
+        mode: tags
+        type: collection
+        width: 33
+        display: Collaborateur(s)
+      artwork_description:
+        buttons:
+          - h2
+          - h3
+          - bold
+          - italic
+          - underline
+          - strikethrough
+          - unorderedlist
+          - orderedlist
+          - removeformat
+          - quote
+          - anchor
+        style: sans
+        spellcheck: false
+        allow_source: true
+        allow_internal_links: true
+        link_noopener: false
+        link_noreferrer: false
+        target_blank: false
+        semantic_elements: false
+        restrict_assets: false
+        type: bard
+        localizable: true
+        display: Description
+        width: 50
+      artwork_preview:
+        container: main
+        folder: artworks
+        restrict: true
+        max_files: 1
+        mode: grid
+        type: assets
+        width: 50
+        display: aperçu
+      artwork_social_medias_label:
+        type: section
+        display: 'Aussi visible sur'
+      artwork_social_medias:
+        fieldset: social_medias_partial
+        type: partial
+        display: 'Réseaux sociaux'
+taxonomies: true
+title: Artwork

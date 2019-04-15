@@ -14,8 +14,8 @@ sections:
         display: 'Médias sociaux'
       website:
         type: text
-        display: Site web
+        display: 'Site web'
         width: 50
         validate: url
 taxonomies: true
-title: Client
+title: Organization
