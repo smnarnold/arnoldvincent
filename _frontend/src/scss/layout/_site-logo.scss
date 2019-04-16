@@ -1,11 +1,29 @@
 .site-logo {
   color: var(--highlight);
+  display: flex;
+  flex: 0 0 100%;
+  font-size: 2em;
   font-weight: bold;
+  justify-content: center;
   text-decoration: none;
 
   br {
-    &:last-of-type {
-      display: none;
+    display: none;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-up(md) {
+  .site-logo {
+    display: inline-block;
+    font-size: 1em;
+
+    br {
+      display: initial;
+
+      &:last-of-type {
+        display: none;
+      }
     }
   }
 }

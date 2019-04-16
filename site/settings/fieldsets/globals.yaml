@@ -9,10 +9,10 @@ sections:
         display: 'Nom du site'
         instructions: 'Nom affiché sur les réseau sociaux, dans l''onglet du navigateur, etc.'
         default: 'Vincent Arnold'
-        width: 25
+        width: 33
       main_logo:
         type: textarea
-        width: 25
+        width: 33
         display: logo
       main_owner:
         max_items: '1'
@@ -21,8 +21,9 @@ sections:
         collection:
           - personnes
         type: collection
-        width: 25
+        width: 33
         display: Propriétaire
+        instructions: 'Pour le référencement'
       highlight_color:
         format: hex
         control: hue
@@ -31,6 +32,16 @@ sections:
         instructions: 'Coleur des liens et des états survolés'
         width: 25
         display: 'Couleur d''accent'
+      main_icon:
+        container: main
+        folder: img
+        restrict: true
+        max_files: 1
+        mode: grid
+        type: assets
+        width: 50
+        display: Icône
+        instructions: 'Icône dans l''onglet du navigateur _(200x200px)_'
       main_menu:
         buttons:
           - bold
@@ -48,7 +59,7 @@ sections:
         semantic_elements: false
         restrict_assets: false
         type: bard
-        display: Menu
+        display: Entête
         instructions: 'Menu apparaissant dans l''entête du site'
         localizable: true
         width: 50

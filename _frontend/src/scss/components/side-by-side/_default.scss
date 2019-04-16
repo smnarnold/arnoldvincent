@@ -1,10 +1,9 @@
 .side-by-side {
-  $paddingH: 25px;
-
-  position: relative;
-  width: 100%;
+  $padding-h: 25px;
   //background: url(https://i.imgur.com/H4uA0fG.jpg);
   padding: 3.6rem 0;
+  position: relative;
+  width: 100%;
 
   &__bg {
     display: none;
@@ -12,14 +11,14 @@
 
   &__container {
     display: flex;
-    max-width: $containerWidth;
     margin: 0 auto;
+    max-width: $container-width;
   }
 
   &__wrapper {
     display: flex;
-    position: relative;
     flex-wrap: wrap;
+    position: relative;
     width: 100%;
   }
 
@@ -30,8 +29,6 @@
   }
 
   &__title {
-    @extend %creation-title;
-
     p {
       // If cms output p tag remove undesired margin
       margin: 0;
@@ -41,13 +38,13 @@
   &__text,
   &__media {
     flex: 1 1 100%;
-    max-width: 100%;
     margin: 0;
+    max-width: 100%;
   }
 
   &__text {
-    padding-top: 3.6rem;
     order: 3;
+    padding-top: 3.6rem;
 
     p,
     blockquote {
@@ -62,10 +59,6 @@
       @extend %href;
     }
 
-    &__wrapper {
-      @extend %children-margin;
-    }
-
     .side-by-side__title {
       padding: 0;
 
@@ -76,12 +69,12 @@
   }
 
   &__media {
-    padding-top: 3.6rem;
     order: 2;
+    padding-top: 3.6rem;
 
-    &[style*="background-color"] {
-      padding-top: 0;
+    &[style*='background-color'] {
       padding-bottom: 3.6rem;
+      padding-top: 0;
     }
   }
 
@@ -93,10 +86,6 @@
   &__type {
     @extend %small-caps;
   }
-
-  &__tag {
-    @extend %tag;
-  }
 }
 
 @include media-breakpoint-up(lg) {
@@ -105,11 +94,11 @@
 
     &__bg {
       display: block;
+      height: 100%;
+      pointer-events: none;
       position: absolute;
       top: 0;
       width: 50%;
-      height: 100%;
-      pointer-events: none;
 
       &--media {
         right: 0;
@@ -131,16 +120,16 @@
 
     &__text,
     &__media {
-      padding: 0 40px;
       flex: 1 1 50%;
       max-width: 50%;
+      padding: 0 40px;
     }
 
     &__media {
       order: 3;
       text-align: right;
 
-      &[style*="background-color"] {
+      &[style*='background-color'] {
         padding-bottom: 0;
       }
     }
@@ -190,11 +179,11 @@
     }
 
     &__aside {
-      order: 2;
-      flex: 1 1 100px;
-      min-width: 100px;
-      max-width: 100px;
       display: block;
+      flex: 1 1 100px;
+      max-width: 100px;
+      min-width: 100px;
+      order: 2;
 
       + .side-by-side__bg {
         width: calc(50% + 50px);

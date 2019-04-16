@@ -1,7 +1,7 @@
-const gulp        = require('gulp');
 const browserSync = require('browser-sync');
+const gulp = require('gulp');
 
-let browserSyncTask = function () {
+function browserSyncTask(done) {
   browserSync.init({
     open: false,
     // proxy: 'dev.local',
@@ -9,7 +9,8 @@ let browserSyncTask = function () {
       baseDir: '../',
     },
   });
-};
 
-gulp.task('browserSync', browserSyncTask);
-module.exports = browserSyncTask;
+  done();
+}
+
+gulp.task('browsersync', browserSyncTask);

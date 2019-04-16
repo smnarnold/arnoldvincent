@@ -10,19 +10,19 @@
 // Medium devices (tablets, 992px and up)
 @include media-breakpoint-up(lg) {
   .side-by-side--media-landscape {
-    $paddingH: 40px;
+    $padding-h: 40px;
 
     .side-by-side {
       &__title {
-        padding: 0 $paddingH;
-        padding: 0 calc(50% + #{$paddingH}) 0 $paddingH;
+        padding: 0 $padding-h;
+        padding: 0 calc(50% + #{$padding-h}) 0 $padding-h;
       }
     }
 
     &:nth-child(even) {
       .side-by-side {
         &__title {
-          padding: 0 $paddingH 0 calc(50% + #{$paddingH});
+          padding: 0 $padding-h 0 calc(50% + #{$padding-h});
         }
       }
     }
@@ -32,19 +32,19 @@
 // Medium devices (tablets, 1200px and up)
 @include media-breakpoint-up(xl) {
   .side-by-side--media-landscape {
-    $paddingH: 40px;
-    $asideW: 100px;
+    $padding-h: 40px;
+    $aside-w: 100px;
 
     .side-by-side {
       &__title {
-        padding: 0 calc(50% + #{$paddingH} + #{$asideW}) 0 $paddingH;
+        padding: 0 calc(50% + #{$padding-h} + #{$aside-w}) 0 $padding-h;
       }
     }
 
     &:nth-child(even) {
       .side-by-side {
         &__title {
-          padding: 0 $paddingH 0 calc(50% + #{$paddingH} + #{$asideW});
+          padding: 0 $padding-h 0 calc(50% + #{$padding-h} + #{$aside-w});
         }
       }
     }

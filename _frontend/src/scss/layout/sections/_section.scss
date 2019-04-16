@@ -39,8 +39,6 @@
   }
 
   &__super {
-    @extend %super;
-
     display: block;
     text-align: center;
   }
@@ -48,10 +46,6 @@
   &__introduction {
     display: block;
     text-align: center;
-  }
-
-  &__legend {
-    @extend %source;
   }
 }
 

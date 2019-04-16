@@ -1,0 +1,69 @@
+/**
+ * Elements
+ * ========
+ * |– blockquote
+ * |– headings
+ * |– list (ol, ul)
+ * |– paragraph
+ */
+
+%blockquote {
+  text-indent: -0.35em; // hanging-punctuation
+
+  &::before {
+    content: '“';
+  }
+
+  &::after {
+    content: '”';
+  }
+
+  [lang='fr'] & {
+    &::before {
+      content: '«';
+    }
+
+    &::after {
+      content: '»';
+    }
+  }
+
+  &:empty {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+%headings {
+  @extend %remove-ends-vertical-margin;
+
+  letter-spacing: -0.03em; // horizontal rhythm (-3 to -5% recommanded)
+
+  &:empty {
+    margin-bottom: 0;
+  }
+}
+
+%list {
+  @extend %remove-ends-vertical-margin;
+
+  list-style-position: outside; // hanging-punctuation
+  margin-bottom: 1em;
+  margin-top: 0;
+  padding-left: 0;
+
+  &:empty {
+    margin-bottom: 0;
+  }
+}
+
+%paragraph {
+  @extend %remove-ends-vertical-margin;
+
+  margin-bottom: 1em;
+  margin-top: 0;
+
+  &:empty {
+    margin-bottom: 0;
+  }
+}

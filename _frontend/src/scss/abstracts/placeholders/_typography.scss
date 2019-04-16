@@ -1,0 +1,82 @@
+%tagline {
+  display: block;
+  font: normal 400 1.2rem font(sans-serif);
+  margin: 20px 0;
+  text-transform: uppercase;
+
+  + %h1,
+  + %h2 {
+    margin-top: 0;
+  }
+}
+
+%h1 {
+  font: normal 2.4rem/1.5 font(serif);
+  margin: 20px 0;
+  position: relative;
+}
+
+%h2 {
+  font: normal 2rem/1.5 font(serif);
+  margin: 20px 0;
+  position: relative;
+}
+
+%blockquote {
+  font-family: font(sans-serif);
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+%small-caps {
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+%href {
+  color: currentColor;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  transition: color $s linear;
+
+  &::before {
+    background-image: linear-gradient(90deg, currentColor 0%, currentColor 33.33%, transparent 33.33%, transparent 66.66%, currentColor 66.66%, currentColor 100%);
+    background-position: 0% 0%;
+    background-size: 300% 1px;
+    bottom: 0.15em;
+    content: '';
+    height: 1px;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    transition: background-position 0.5s;
+    width: 100%;
+  }
+
+  &:hover {
+    color: var(--highlight);
+
+    &::before {
+      background-position: 100% 0;
+    }
+  }
+}
+
+%ellipsis {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+%uppercase {
+  letter-spacing: 0.05em; // horizontal rhythm (5 to 10% recommanded)
+  text-transform: uppercase;
+}

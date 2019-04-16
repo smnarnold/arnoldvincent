@@ -1,5 +1,13 @@
 <footer class="site-footer">
   <div class="site-footer__container container">
-    {{ main_footer }}
+    <nav class="site-footer__nav">
+      {{ main_footer }}
+    </nav>
+
+    <div class="site-footer__lang">
+      {{ locales }}
+        {{ if !first }}<a href="{{ url }}">{{ locale:name }}</a>{{ /if }}
+      {{ /locales }}
+    </div>
   </div>
 </footer>

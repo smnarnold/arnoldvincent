@@ -2,7 +2,7 @@ body {
   &::after {
     @extend %sr-only;
 
-    content: "xs";
+    content: 'xs';
   }
 }
 
@@ -10,7 +10,7 @@ body {
 @include media-breakpoint-up(sm) {
   body {
     &::after {
-      content: "sm";
+      content: 'sm';
     }
   }
 }
@@ -19,7 +19,7 @@ body {
 @include media-breakpoint-up(md) {
   body {
     &::after {
-      content: "md";
+      content: 'md';
     }
   }
 }
@@ -28,7 +28,7 @@ body {
 @include media-breakpoint-up(lg) {
   body {
     &::after {
-      content: "lg";
+      content: 'lg';
     }
   }
 }
@@ -37,7 +37,7 @@ body {
 @include media-breakpoint-up(xl) {
   body {
     &::after {
-      content: "xl";
+      content: 'xl';
     }
   }
 }
