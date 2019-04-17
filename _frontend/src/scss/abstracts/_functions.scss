@@ -12,8 +12,3 @@
 @function font($style: 'sans-serif') {
   @return map-get($fonts, $style);
 }
-
-// gutters
-@function gutter($gutter, $dir: 'base') {
-  @return map-get(map-get($gutters, $gutter), $dir);
-}

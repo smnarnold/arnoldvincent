@@ -4,27 +4,17 @@
  */
 
 $duration: 0.3s;
-$s: 0.3s;
 $container-width: 1200px;
-$gutter: 20px;
 
 $palettes: (
   black: (
     base: #000,
   ),
   grey: (
-    x-light: #ebebeb,
-    light: #bfbfbf,
     base: #7f7f7f,
-    dark: #404040,
-    x-dark: #373737,
   ),
   white: (
     base: #fff,
-  ),
-  pink: (
-    base: #eac7c2,
-    highlight: #f694c1,
   ),
 );
 
@@ -34,8 +24,12 @@ $fonts: (
   alt: #{ 'Roboto Mono', helvetica, arial, sans-serif },
 );
 
-$site-header-height: calc(46px + 0.9vw);
+:root {
+  --gutter: 20px;
+}
 
 @include media-breakpoint-up(lg) {
-  $gutter: 40px;
+  :root {
+    --gutter: 40px;
+  }
 }

@@ -23,7 +23,7 @@
   }
 
   &__nav {
-    padding: $gutter 0;
+    padding: var(--gutter, 20px) 0;
   }
 
   &__lang {
@@ -35,7 +35,7 @@
 // Medium devices (tablets, 768px and up)
 @include media-breakpoint-up(md) {
   .site-footer {
-    padding: $gutter 0;
+    padding: var(--gutter, 20px) 0;
 
     &__nav {
       flex: 1 0 auto;

@@ -16,6 +16,7 @@
 @include media-breakpoint-up(md) {
   .site-logo {
     display: inline-block;
+    flex: 0 0 auto;
     font-size: 1em;
 
     br {

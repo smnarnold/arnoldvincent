@@ -1,7 +1,7 @@
 .site-header {
   font-size: 1.2rem; // 12px
+  padding: var(--gutter, 20px) 0;
   width: 100%;
-  padding: $gutter 0;
 
   &__container {
     display: flex;
@@ -9,10 +9,21 @@
   }
 
   &__menu {
-    display: inline-block;
-
     a {
       @extend %href;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-up(md) {
+  .site-header {
+    &__container {
+      align-items: flex-end;
+    }
+
+    &__menu {
+      flex: 1 0 auto;
     }
   }
 }
