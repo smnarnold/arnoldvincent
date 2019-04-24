@@ -1,0 +1,8 @@
+sections:
+  main:
+    display: Main
+    fields: 
+      title:
+        localizable: true
+taxonomies: true
+title: 'Artwork type'

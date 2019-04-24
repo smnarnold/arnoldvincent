@@ -17,7 +17,6 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'airbnb-base',
-    'plugin:vue/strongly-recommended',
   ],
   globals: {
     initClasses: true, // Vanilla JS

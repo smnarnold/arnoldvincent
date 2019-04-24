@@ -2,13 +2,15 @@
   color: var(--highlight);
   display: flex;
   flex: 0 0 100%;
-  font-size: 2em;
   font-weight: bold;
   justify-content: center;
   text-decoration: none;
+  margin: 0.5em 0;
+}
 
-  br {
-    display: none;
+@include media-breakpoint-up(sm) {
+  .site-logo {
+    flex: 0 0 auto;
   }
 }
 
@@ -16,15 +18,6 @@
 @include media-breakpoint-up(md) {
   .site-logo {
     display: inline-block;
-    flex: 0 0 auto;
-    font-size: 1em;
-
-    br {
-      display: initial;
-
-      &:last-of-type {
-        display: none;
-      }
-    }
+    
   }
 }

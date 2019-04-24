@@ -1,4 +1,4 @@
-# Sid Lee - Frontend Structure
+# Structure
 
 ## Requirements
 - [NodeJS 8.x LTS](https://nodejs.org/en/)

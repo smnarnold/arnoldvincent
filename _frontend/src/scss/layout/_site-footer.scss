@@ -1,5 +1,4 @@
 .site-footer {
-  font-size: 1.2rem; // 12px
   width: 100%;
 
   a {
@@ -28,7 +27,7 @@
 
   &__lang {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   }
 }
 
@@ -44,6 +43,7 @@
 
     &__lang {
       flex: 0 0 auto;
+      justify-content: flex-end;
     }
   }
 }

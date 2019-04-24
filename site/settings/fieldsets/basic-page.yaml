@@ -1,0 +1,6 @@
+hide: true
+fields:
+  components:
+    type: partial
+    display: Components
+    fieldset: page_components

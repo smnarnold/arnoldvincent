@@ -3,11 +3,13 @@ sections:
     display: Main
     fields:
       artwork_type:
-        options:
-          mural: Murale
-          painting: Peinture
-          illustration: Illustration
-        type: select
+        max_items: '1'
+        sort: 'title:asc'
+        label: '{{ title }}'
+        collection:
+          - type-doeuvres
+        mode: tags
+        type: collection
         width: 33
         display: Type
       artwork_clients:
@@ -55,7 +57,7 @@ sections:
         type: bard
         localizable: true
         display: Description
-        width: 50
+        width: 66
       artwork_preview:
         container: main
         folder: artworks
@@ -63,7 +65,7 @@ sections:
         max_files: 1
         mode: grid
         type: assets
-        width: 50
+        width: 33
         display: aperçu
       artwork_social_medias_label:
         type: section

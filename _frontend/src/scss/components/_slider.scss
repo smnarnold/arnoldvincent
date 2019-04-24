@@ -1,0 +1,38 @@
+.slider {
+  position: relative;
+  overflow-x: scroll;
+  width: calc(100% + var(--gutter));
+  margin: -5px;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+  }
+
+  &__tile {
+    display: block;
+    position: relative;
+    padding: 5px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+    .slider {
+        --height: var(--main);
+
+        height: var(--main);
+
+        &__tile {
+            flex: 0 0 calc(var(--main) / 2);
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .slider {
+        padding-left: calc( (100vw - 1200px) /2 + var(--gutter) );
+    }
+}

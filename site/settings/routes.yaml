@@ -1,4 +1,7 @@
-collections: {  }
+collections:
+  artworks:
+    fr: 'oeuvres/{slug}'
+    en: 'artworks/{slug}'
 taxonomies:
   tags: '/blog/tags/{slug}'
 routes:

@@ -1,13 +1,9 @@
----
-posts: 3
 components:
   -
-    type: 'Liste illustrations'
-    preview-pictures_sort: 'date:desc'
-    preview-pictures_limit: 2
+    type: preview-artworks
+    preview-artworks_sort: 'date:desc'
+    preview-artworks_limit: 0
+    preview-artwork_type: d4b35900-49f1-4255-9e22-07f05eec1d15
 title: Accueil
-template: home
-fieldset: home
+fieldset: basic-page
 id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7
----
-Our latest blog posts:

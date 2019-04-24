@@ -7,13 +7,13 @@ sections:
     fields:
       components:
         type: replicator
-        display: Components
+        display: Composantes
         sets:
-          Liste illustrations:
-            display: ''
+          preview-artworks:
+            display: "Gallerie d'oeuvres"
             fields:
-              preview-illustrations:
-                fieldset: preview-illustrations
+              preview-artworks:
+                fieldset: preview-artworks
                 type: partial
-                display: 'Liste illustrations'
+                display: "Gallerie d'oeuvres"
 hide: true

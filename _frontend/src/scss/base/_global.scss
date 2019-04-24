@@ -8,26 +8,33 @@ body {
 }
 
 html {
-  font: 300 10px/1.4 font(serif);
+  font: 300 10px/1.4 Helvetica, Arial, sans-serif;
 }
 
 body {
-  font-size: 1.6rem; // 16px
+  font-size: 1.6rem; // 14px
   line-height: 1.8;
 }
 
 main {
   position: relative;
-  z-index: 1;
+  overflow-x: hidden;
+}
+
+p,
+ol,
+ul {
+  margin: 0.5em 0;
 }
 
 .sr-only {
   @extend %sr-only;
 }
 
-// Large devices (desktops, 1380px and up)
-@media (min-width: 1380px) {
-  body {
-    padding-top: 0;
+@include media-breakpoint-up(lg) {
+  main {
+    --main: calc(100vh - 4 * var(--gutter) - var(--header) - var(--footer) );
+
+    height: var(--main);
   }
 }

@@ -16,12 +16,10 @@ class Site {
    */
   init() {
     this.bindEvents();
-    this.setFooter();
   }
 
   bindEvents() {
     window.addEventListener('scroll', throttle(300, () => this.setScrollDirection()));
-    window.addEventListener('resize', debounce(300, () => this.setFooter()));
   }
 
   setScrollDirection() {
@@ -31,10 +29,6 @@ class Site {
     document.documentElement.classList.toggle('is-scrolling-down', isScrollingDown);
     document.documentElement.classList.toggle('is-scrolling-up', !isScrollingDown);
     this.previousScrollY = scrollY <= 0 ? 0 : scrollY;
-  }
-
-  setFooter() {
-    this.dom.main.style.marginBottom = `${this.dom.footer.offsetHeight}px`;
   }
 }
 
