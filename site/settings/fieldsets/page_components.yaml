@@ -9,11 +9,11 @@ sections:
         type: replicator
         display: Composantes
         sets:
-          preview-artworks:
-            display: "Gallerie d'oeuvres"
+          artworks-hub:
+            display: 'Hub d''oeuvres'
             fields:
-              preview-artworks:
-                fieldset: preview-artworks
+              artworks-hub:
+                fieldset: artworks-hub
                 type: partial
-                display: "Gallerie d'oeuvres"
+                display: 'Hub d''oeuvres'
 hide: true

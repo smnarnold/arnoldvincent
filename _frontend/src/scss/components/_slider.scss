@@ -1,8 +1,11 @@
 .slider {
+  --height: var(--main);
+
   position: relative;
   overflow-x: scroll;
   width: calc(100% + var(--gutter));
   margin: -5px;
+  height: var(--main);
 
   &__wrapper {
     display: flex;
@@ -16,23 +19,24 @@
     display: block;
     position: relative;
     padding: 5px;
+    flex: 0 0 calc(var(--main) / 2);
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .slider {
+    --height: var(--main);
+
+    height: var(--main);
+
+    &__tile {
+      flex: 0 0 calc(var(--main) / 2);
+    }
   }
 }
 
 @include media-breakpoint-up(lg) {
-    .slider {
-        --height: var(--main);
-
-        height: var(--main);
-
-        &__tile {
-            flex: 0 0 calc(var(--main) / 2);
-        }
-    }
-}
-
-@include media-breakpoint-up(lg) {
-    .slider {
-        padding-left: calc( (100vw - 1200px) /2 + var(--gutter) );
-    }
+  .slider {
+    padding-left: calc( (100vw - 1200px) /2 + var(--gutter) );
+  }
 }

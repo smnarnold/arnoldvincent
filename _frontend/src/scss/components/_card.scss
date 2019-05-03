@@ -67,7 +67,6 @@
         .card {
             &__media {
                 img {
-                    object-position: 50% 100%;
                     filter: grayscale(100%);
                 }
             }
@@ -84,14 +83,15 @@
 
     .slider & {
         height: 100%;
+        width: calc(var(--main)/2 *1.777778);
     }
 }
 
 
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-up(md) {
     .card {
         .slider & {
-            width: calc( var(--main)/2 *1.777778);
+            width: calc(var(--main)/2 *1.777778);
         }
     }
 }

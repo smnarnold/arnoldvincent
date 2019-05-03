@@ -1,0 +1,25 @@
+<section class="section">
+    <div class="container">
+        <div class="swiper-container js-hub-swiper">
+            <ul class="swiper-wrapper">
+                {{ if artwork-hub_type }}
+                    {{ collection:artworks as="artwork" sort="{artworks-hub_sort}" limit="{artworks-hub_limit}" artwork_type:is="{artwork-hub_type}" }}
+                        {{ artwork }}
+                            <li class="swiper-slide {{ assets:artwork_preview }}{{ if width > height}}slider__tile--horizontal{{else}}slider__tile--vertical{{/if}}{{ /assets:artwork_preview }}">
+                                {{ partial src="components/artwork-card" }} 
+                            </li>
+                        {{ /artwork }}
+                    {{ /collection:artworks }}
+                {{ else}}
+                    {{ collection:artworks as="artwork" sort="{artworks-hub_sort}" limit="{artworks-hub_limit}" }}
+                        {{ artwork }}
+                            <li class="swiper-slide {{ assets:artwork_preview }}{{ if width > height}}slider__tile--horizontal{{else}}slider__tile--vertical{{/if}}{{ /assets:artwork_preview }}">
+                                {{ partial src="components/artwork-card" }} 
+                            </li>
+                        {{ /artwork }}
+                    {{ /collection:artworks }}
+                {{/if}}
+            </ul>
+        </div>
+    </div>
+</section>

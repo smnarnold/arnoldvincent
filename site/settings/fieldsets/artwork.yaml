@@ -67,6 +67,11 @@ sections:
         type: assets
         width: 33
         display: aperçu
+      artwork_components:
+        fieldset: page_components
+        type: partial
+        localizable: true
+        display: Components
       artwork_social_medias_label:
         type: section
         display: 'Aussi visible sur'

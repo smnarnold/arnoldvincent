@@ -18,3 +18,19 @@ assets:
     title: 'Baudelaire, le maître des sables'
     alt: 'Baudelaire, le maître des sables'
     focus: 29-28
+  artworks/felix-pancake.jpg:
+    title: 'Felix Pancake'
+    alt: 'Felix Pancake'
+    focus: 25-22
+  artworks/antan.jpg:
+    title: 'Le phare d''Antan'
+    alt: 'Le phare d''Antan'
+    focus: 23-34
+  artworks/amalgam.jpg:
+    title: 'Amalgam 5'
+    alt: 'Amalgam 5'
+    focus: 47-42
+  artworks/the-touchable.jpg:
+    title: 'The touchable'
+    alt: 'The touchable'
+    focus: 60-40

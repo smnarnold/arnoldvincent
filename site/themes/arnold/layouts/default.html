@@ -8,6 +8,7 @@
   {{ partial:metas/favicons }}
 
   <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
   {{ theme:css src="main" tag="true" }}
   <style>
     :root {
@@ -29,6 +30,19 @@
   {{ partial:layout/site-footer }}
 
   <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+  <!-- <script>
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        slidesPerColumn: 2,
+        spaceBetween: 10,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    </script> -->
   {{ theme:js src="main" tag="true" }}
 </body>
 </html>

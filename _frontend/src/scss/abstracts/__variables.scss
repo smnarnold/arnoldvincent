@@ -26,18 +26,20 @@ $fonts: (
 
 :root {
   --gutter: 20px;
+  --header: 57px;
+  --footer: 57px;
 }
 
 @include media-breakpoint-up(md) {
   :root {
     --gutter: 30px;
+    --header: 57px;
+    --footer: 57px;
   }
 }
 
 @include media-breakpoint-up(lg) {
   :root {
-    --header: 57px;
-    --footer: 57px;
     --gutter: 40px;
   }
 }

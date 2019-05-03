@@ -6,29 +6,45 @@ class Site {
       header: document.querySelector('.site-header'),
       main: document.querySelector('main'),
       footer: document.querySelector('.site-footer'),
+      hubSwipers: document.querySelectorAll('.js-hub-swiper'),
     };
-
-    this.previousScrollY = 0;
   }
 
   /**
    * Methods
    */
   init() {
+    this.initHubSwipers();
     this.bindEvents();
   }
 
-  bindEvents() {
-    window.addEventListener('scroll', throttle(300, () => this.setScrollDirection()));
+  initHubSwipers() {
+    for (const hub of this.dom.hubSwipers) {
+      new Swiper(hub, {
+        slidesPerView: 1.2,
+        slidesPerColumn: 2,
+        spaceBetween: 10,
+        pagination: {
+          clickable: true,
+        },
+        breakpointsInverse: true,
+        breakpoints: {
+          576: {
+            slidesPerView: 1.5
+          },
+          768: {
+            slidesPerView: 2.25
+          },
+          992: {
+            slidesPerView: 3
+          },
+        }
+      });
+    };
   }
 
-  setScrollDirection() {
-    let scrollY = window.pageYOffset || document.documentElement.scrollTop;
-    let isScrollingDown = scrollY > this.previousScrollY ? true : false;
-
-    document.documentElement.classList.toggle('is-scrolling-down', isScrollingDown);
-    document.documentElement.classList.toggle('is-scrolling-up', !isScrollingDown);
-    this.previousScrollY = scrollY <= 0 ? 0 : scrollY;
+  bindEvents() {
+    // window.addEventListener('scroll', throttle(300, () => this.setScrollDirection()));
   }
 }
 

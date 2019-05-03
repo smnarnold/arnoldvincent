@@ -2,7 +2,7 @@ sections:
   main:
     display: Main
     fields:
-      preview-artwork_type:
+      artwork-hub_type:
         max_items: '1'
         sort: 'title:asc'
         label: '{{ title }}'
@@ -12,23 +12,24 @@ sections:
         type: collection
         width: 33
         display: Type
-        instructions: 'N''afficher que ce type d''oeuvres'
-      preview-artworks_sort:
+        instructions: 'N''afficher que ce type _(vide = tous types confondus)_'
+      artworks-hub_sort:
         options:
           'date:desc': 'Des plus récentes aux plus anciennes'
           'date:asc': 'Des plus anciennes aux plus récentes'
           'title:asc': 'Par ordre alphabétique (A-Z)'
           'title:desc': 'Par ordre alphabétique inverse (Z-A)'
           random: Aléatoirement
+          '': 'Par ordre dans dans la collection'
         type: select
         instructions: 'Les afficher dans quelle ordre?'
         width: 33
         display: Ordre
-      preview-artworks_limit:
+      artworks-hub_limit:
         type: integer
         instructions: 'Combien d''oeuvres? _(0 = toutes)_'
         width: 33
         display: Limite
         default: '2'
 taxonomies: false
-title: 'Artworks list'
+title: 'Artworks hub'
