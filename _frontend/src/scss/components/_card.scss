@@ -22,7 +22,7 @@
             margin: 0;
             padding: 0;
             filter: grayscale(0%);
-            transition: filter $duration*2, object-position $duration*2;
+            transition: filter $duration*2;
         }
     }
 
@@ -65,6 +65,8 @@
 
     &:hover {
         .card {
+            transform: skew(5deg);
+            
             &__media {
                 img {
                     filter: grayscale(100%);

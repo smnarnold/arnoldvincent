@@ -16,4 +16,11 @@ sections:
                 fieldset: artworks-hub
                 type: partial
                 display: 'Hub d''oeuvres'
+          artworks-custom-hub:
+            display: 'Hub d''oeuvres personnalisé'
+            fields:
+              artworks-custom-hub:
+                fieldset: artworks-custom-hub
+                type: partial
+                display: 'Hub d''oeuvres personnalisé'
 hide: true

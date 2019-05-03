@@ -1,0 +1,15 @@
+sections:
+  main:
+    display: Main
+    fields:
+      artworks_list:
+        sort: 'title:asc'
+        label: '{{ title }}'
+        collection:
+          - artworks
+        mode: tags
+        type: collection
+        display: 'Liste d''oeuvres'
+taxonomies: false
+title: 'Artworks custom hub'
+hide: true

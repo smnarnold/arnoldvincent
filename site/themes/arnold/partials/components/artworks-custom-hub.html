@@ -1,0 +1,13 @@
+<section class="section">
+    <div class="container">
+        <div class="swiper-container js-hub-swiper">
+            <ul class="swiper-wrapper">
+                {{ relate:artworks_list }}
+                    <li class="swiper-slide {{ assets:artwork_preview }}{{ if width > height}}slider__tile--horizontal{{else}}slider__tile--vertical{{/if}}{{ /assets:artwork_preview }}">
+                        {{ partial src="components/artwork-card" }} 
+                    </li>
+                {{ /relate:artworks_list }}
+            </ul>
+        </div>
+    </div>
+</section>

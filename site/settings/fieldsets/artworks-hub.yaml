@@ -12,7 +12,7 @@ sections:
         type: collection
         width: 33
         display: Type
-        instructions: 'N''afficher que ce type _(vide = tous types confondus)_'
+        instructions: '_(vide = tous types confondus)_'
       artworks-hub_sort:
         options:
           'date:desc': 'Des plus récentes aux plus anciennes'
@@ -20,7 +20,6 @@ sections:
           'title:asc': 'Par ordre alphabétique (A-Z)'
           'title:desc': 'Par ordre alphabétique inverse (Z-A)'
           random: Aléatoirement
-          '': 'Par ordre dans dans la collection'
         type: select
         instructions: 'Les afficher dans quelle ordre?'
         width: 33
@@ -30,6 +29,6 @@ sections:
         instructions: 'Combien d''oeuvres? _(0 = toutes)_'
         width: 33
         display: Limite
-        default: '2'
+        default: '0'
 taxonomies: false
 title: 'Artworks hub'

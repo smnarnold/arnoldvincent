@@ -17,11 +17,7 @@ body {
 }
 
 main {
-  --main: calc(100vh - 4 * var(--gutter) - var(--header) - var(--footer) );
-
-  height: var(--main);
   position: relative;
-  overflow-x: hidden;
 
   .section {
     &:first-of-type {
@@ -42,12 +38,4 @@ ul {
 
 .sr-only {
   @extend %sr-only;
-}
-
-@include media-breakpoint-up(md) {
-  main {
-    --main: calc(100vh - 4 * var(--gutter) - var(--header) - var(--footer) );
-
-    height: var(--main);
-  }
 }

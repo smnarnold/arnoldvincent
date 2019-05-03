@@ -25,16 +25,24 @@ $fonts: (
 );
 
 :root {
+  --main: calc(100vh - 4 * var(--gutter) - var(--header) - var(--footer) );
   --gutter: 20px;
-  --header: 57px;
-  --footer: 57px;
+  --header: 93px;
+  --footer: 149px;
+}
+
+@include media-breakpoint-up(sm) {
+  :root {
+    --header: 65px;
+    --footer: 120px;
+  }
 }
 
 @include media-breakpoint-up(md) {
   :root {
     --gutter: 30px;
-    --header: 57px;
-    --footer: 57px;
+    --header: 65px;
+    --footer: 65px;
   }
 }
 
