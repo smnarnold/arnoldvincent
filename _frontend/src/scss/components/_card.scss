@@ -65,8 +65,6 @@
 
     &:hover {
         .card {
-            transform: skew(5deg);
-            
             &__media {
                 img {
                     filter: grayscale(100%);
@@ -80,20 +78,6 @@
             &__overlay {
                 opacity: 0.5;
             }
-        }
-    }
-
-    .slider & {
-        height: 100%;
-        width: calc(var(--main)/2 *1.777778);
-    }
-}
-
-
-@include media-breakpoint-up(md) {
-    .card {
-        .slider & {
-            width: calc(var(--main)/2 *1.777778);
         }
     }
 }

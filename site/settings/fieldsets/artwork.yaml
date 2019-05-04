@@ -79,5 +79,11 @@ sections:
         fieldset: social_medias_partial
         type: partial
         display: 'Réseaux sociaux'
+      artwork_highlight_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        display: 'Couleur d''accent'
 taxonomies: true
 title: Artwork

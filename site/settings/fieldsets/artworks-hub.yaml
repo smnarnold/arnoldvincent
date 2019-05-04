@@ -15,10 +15,10 @@ sections:
         instructions: '_(vide = tous types confondus)_'
       artworks-hub_sort:
         options:
-          'date:desc': 'Des plus récentes aux plus anciennes'
-          'date:asc': 'Des plus anciennes aux plus récentes'
-          'title:asc': 'Par ordre alphabétique (A-Z)'
-          'title:desc': 'Par ordre alphabétique inverse (Z-A)'
+          'date:desc': '+ récentes aux + anciennes'
+          'date:asc': '+ anciennes aux + récentes'
+          'title:asc': 'Ordre alphabétique (A-Z)'
+          'title:desc': 'Ordre alphabétique inverse (Z-A)'
           random: Aléatoirement
         type: select
         instructions: 'Les afficher dans quelle ordre?'

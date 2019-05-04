@@ -12,7 +12,13 @@
   {{ theme:css src="main" tag="true" }}
   <style>
     :root {
-      --highlight: {{ highlight_color }};
+      {{ if artwork_highlight_color }}
+        --highlight: {{ artwork_highlight_color }}
+      {{ elseif page_highlight_color }}
+        --highlight: {{ page_highlight_color }}
+      {{ else }}
+        --highlight: {{ highlight_color }};
+      {{ /if }}
     }
   </style>
 </head>

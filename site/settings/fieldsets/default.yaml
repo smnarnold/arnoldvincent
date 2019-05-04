@@ -1,0 +1,14 @@
+hide: true
+fields:
+  page_highlight_color:
+    format: hex
+    control: hue
+    show_opacity: false
+    type: colorpicker
+    display: 'Couleur d''accent'
+    width: 33
+  components:
+    type: partial
+    display: Components
+    fieldset: page_components
+  

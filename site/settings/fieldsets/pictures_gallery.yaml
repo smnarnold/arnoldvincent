@@ -1,0 +1,12 @@
+sections:
+  main:
+    display: Main
+    fields:
+      pictures_list:
+        container: main
+        folder: artworks
+        restrict: true
+        type: assets
+        display: 'Liste d''images'
+taxonomies: true
+title: 'Pictures gallery'

@@ -6,8 +6,11 @@ class Site {
       header: document.querySelector('.site-header'),
       main: document.querySelector('main'),
       footer: document.querySelector('.site-footer'),
+      gallerySwipers: document.querySelectorAll('.js-gallery-swiper'),
       hubSwipers: document.querySelectorAll('.js-hub-swiper'),
     };
+
+    this.counter = 0;
   }
 
   /**
@@ -15,6 +18,7 @@ class Site {
    */
   init() {
     this.initHubSwipers();
+    this.initGallerySwipers();
     this.bindEvents();
   }
 
@@ -24,8 +28,9 @@ class Site {
         slidesPerView: 1.2,
         slidesPerColumn: 2,
         spaceBetween: 10,
-        pagination: {
-          clickable: true,
+        mousewheel: {
+          releaseOnEdges: true,
+          sensitivity: 20
         },
         breakpointsInverse: true,
         breakpoints: {
@@ -40,6 +45,29 @@ class Site {
           },
         }
       });
+    };
+  }
+
+  initGallerySwipers() {
+    for (const gallery of this.dom.gallerySwipers) {
+      const swiper = new Swiper(gallery, {
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        mousewheel: {
+          releaseOnEdges: true,
+          sensitivity: 20
+        }
+      });
+
+      const imgs = gallery.querySelectorAll('img');
+      let counter = 0;
+
+      for (const img of imgs) {
+        img.addEventListener( 'load', () => {
+          counter += 1;
+          if(counter === imgs.length) swiper.update();
+        }, false );
+      }
     };
   }
 
