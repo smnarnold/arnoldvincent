@@ -1,4 +1,7 @@
 .swiper {
+    opacity: 0;
+    transition: opacity $duration;
+
     &-container {
         --height: var(--main);
 
@@ -17,6 +20,14 @@
 
     &-slide {
         position: relative;
+        opacity: 0;
+        transform: translateY(-10px);
+
+        @for $i from 1 through 40 {
+            &:nth-child(#{$i}) {
+                transition: opacity 1s #{$i * 0.2 - 0.2}s, transform 1s #{$i * 0.2 - 0.2}s;
+            }
+        }
     }
 
     .card {
@@ -26,10 +37,17 @@
     }
 
     &__picture {
-        display: block;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 100%;
 
         img {
+            position: relative;
             display: block;
+            width: auto;
+            height: auto;
+            max-height: 100%;
         }
     }
 
@@ -46,6 +64,17 @@
             &-slide {
                 width: auto;
                 height: 100%;
+            }
+        }
+    }
+
+    &.is-ready {
+        opacity: 1;
+
+        .swiper {
+            &-slide {
+                opacity: 1;
+                transform: translateY(0);
             }
         }
     }

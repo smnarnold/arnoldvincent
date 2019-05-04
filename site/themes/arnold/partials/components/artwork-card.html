@@ -1,15 +1,16 @@
 <a href="{{ url }}" class="card">
     <span class="card__title">{{ title }}</span>
-    
-    <picture class="card__media">
-        <source srcset="{{ glide:artwork_preview width='724' }}" media="(-webkit-min-device-pixel-ratio: 2) and (min-width: 993px)">
-        <source srcset="{{ glide:artwork_preview width='600' }}" media="(-webkit-min-device-pixel-ratio: 2) and (min-width: 769px)">
-        <source srcset="{{ glide:artwork_preview width='620' }}" media="(-webkit-min-device-pixel-ratio: 2) and (min-width: 575px)">
-        <source srcset="{{ glide:artwork_preview width='362' }}" media="(min-width: 993px)">
-        <source srcset="{{ glide:artwork_preview width='300' }}" media="(min-width: 769px)">
-        <source srcset="{{ glide:artwork_preview width='310' }}" media="(min-width: 575px)">
-        <img src="{{ artwork_preview }}" />
-    </picture>
+    {{ assets:artwork_preview }}
+      <picture class="card__media">
+          <source srcset="{{ glide:artwork_preview width='724' }}" media="(-webkit-min-device-pixel-ratio: 2) and (min-width: 993px)">
+          <source srcset="{{ glide:artwork_preview width='600' }}" media="(-webkit-min-device-pixel-ratio: 2) and (min-width: 769px)">
+          <source srcset="{{ glide:artwork_preview width='620' }}" media="(-webkit-min-device-pixel-ratio: 2) and (min-width: 575px)">
+          <source srcset="{{ glide:artwork_preview width='362' }}" media="(min-width: 993px)">
+          <source srcset="{{ glide:artwork_preview width='300' }}" media="(min-width: 769px)">
+          <source srcset="{{ glide:artwork_preview width='310' }}" media="(min-width: 575px)">
+          <img src="{{ artwork_preview }}" width="{{ width }}px" height="{{ height}}px" alt="{{ alt }}" />
+      </picture>
+    {{ /assets:artwork_preview }}
 
     <span class="card__overlay"></span>
 </a>  

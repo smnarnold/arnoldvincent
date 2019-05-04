@@ -3,17 +3,21 @@
         <div class="swiper swiper--gallery">
             <div class="swiper-container js-gallery-swiper">
                 <ul class="swiper-wrapper">
-                    {{ pictures_list }}
+                    {{ assets:pictures_list }}
                         <li class="swiper-slide">
                             <picture class="swiper__picture">
-                                <source srcset="{{ glide:value height='512' }}" media="(min-height: 800px)">
-                                <source srcset="{{ glide:value height='412' }}" media="(min-height: 700px)">
-                                <source srcset="{{ glide:value height='312' }}" media="(min-height: 600px)">
-                                <source srcset="{{ glide:value height='212' }}" media="(min-height: 500px)">
-                                <img src="{{ value }}" width="{{ width }}" height="{{ height }}" alt="{{ alt }}" />
+                                <source srcset="{{ glide:url height='1024' width='2400' fit='contain' }}" media="(-webkit-min-device-pixel-ratio: 2) and (min-height: 800px)">
+                                <source srcset="{{ glide:url height='824' width='2400' fit='contain' }}" media="(-webkit-min-device-pixel-ratio: 2) and (min-height: 700px)">
+                                <source srcset="{{ glide:url height='624' width='2400' fit='contain' }}" media="(-webkit-min-device-pixel-ratio: 2) and (min-height: 600px)">
+                                <source srcset="{{ glide:url height='424' width='2400' fit='contain' }}" media="(-webkit-min-device-pixel-ratio: 2) and (min-height: 500px)">
+                                <source srcset="{{ glide:url height='512' width='1200' fit='contain' }}" media="(min-height: 800px)">
+                                <source srcset="{{ glide:url height='412' width='1200' fit='contain' }}" media="(min-height: 700px)">
+                                <source srcset="{{ glide:url height='312' width='1200' fit='contain' }}" media="(min-height: 600px)">
+                                <source srcset="{{ glide:url height='212' width='1200' fit='contain' }}" media="(min-height: 500px)">
+                                <img src="{{ url }}" width="{{ width }}px" height="{{ height}}px" alt="{{ alt }}" class="js-popup-image" data-src="{{ url }}" />
                             </picture>
                         </li>
-                    {{ /pictures_list }}
+                    {{ /assets:pictures_list }}
                 </ul>
             </div>
         </div>

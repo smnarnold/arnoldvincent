@@ -8,6 +8,7 @@ class Site {
       footer: document.querySelector('.site-footer'),
       gallerySwipers: document.querySelectorAll('.js-gallery-swiper'),
       hubSwipers: document.querySelectorAll('.js-hub-swiper'),
+      popupImages: document.querySelectorAll('.js-popup-image'),
     };
 
     this.counter = 0;
@@ -43,6 +44,11 @@ class Site {
           992: {
             slidesPerView: 3
           },
+        },
+        on: {
+          imagesReady: () => {
+            hub.parentNode.classList.add('is-ready');
+          },
         }
       });
     };
@@ -56,6 +62,11 @@ class Site {
         mousewheel: {
           releaseOnEdges: true,
           sensitivity: 20
+        },
+        on: {
+          imagesReady: () => {
+            gallery.parentNode.classList.add('is-ready');
+          },
         }
       });
 
@@ -72,7 +83,28 @@ class Site {
   }
 
   bindEvents() {
+    for (const image of this.dom.popupImages) {
+      image.addEventListener('click', () => this.generateImagePopup(image));
+    }
+    
     // window.addEventListener('scroll', throttle(300, () => this.setScrollDirection()));
+  }
+
+  generateImagePopup(img) {
+    const src = img.getAttribute('data-src');
+    document.body.insertAdjacentHTML('beforeend', `<div class='popup popup--image'><div class="popup__wrapper"><img src='${src}'></div></div>`);
+    const popup = document.querySelector('.popup');
+    setTimeout(() => popup.classList.add('is-active'), 0);
+    popup.addEventListener('click', () => this.deletePopup(popup));
+  }
+
+  deletePopup(popup) {
+    popup.classList.remove('is-active');
+    popup.addEventListener('transitionend', () => {
+      if(popup && popup.parentNode !== null) {
+        popup.parentNode.removeChild(popup);
+      }
+    });
   }
 }
 
