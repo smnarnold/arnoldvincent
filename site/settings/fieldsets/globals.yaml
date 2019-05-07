@@ -19,14 +19,6 @@ sections:
         width: 33
         display: Propriétaire
         instructions: 'Pour le référencement'
-      highlight_color:
-        format: hex
-        control: hue
-        show_opacity: false
-        type: colorpicker
-        instructions: 'Couleur des liens et des états survolés'
-        width: 25
-        display: 'Couleur d''accent'
       site_icon:
         container: main
         folder: img
@@ -34,9 +26,36 @@ sections:
         max_files: 1
         mode: grid
         type: assets
-        width: 50
+        width: 33
         display: Icône
         instructions: 'Icône dans l''onglet du navigateur _(200x200px)_'
+      styles_label:
+        type: section
+        display: 'Apparence'
+      background_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 33
+        display: Couleur de l'arrière-Plan
+      text_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 33
+        display: Couleur du texte
+      highlight_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 33
+        display: "Couleur d'Accent"
+      nav_label:
+        type: section
+        display: 'Navigation'
       site_menu:
         buttons:
           - bold

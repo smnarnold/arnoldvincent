@@ -1,7 +1,9 @@
 site_logo: 'Vincent Arnold.'
 site_owner: a9a68a71-17f8-4b43-80b7-8a68b7f82576
-highlight_color: '#ed0165'
 site_icon: /assets/img/fav.png
+background_color: '#ffffff'
+text_color: '#000000'
+highlight_color: '#ed0165'
 site_menu: '<p>Je fais des&nbsp;<a href="{{ link:4a5710c9-b409-4595-bb77-59cf15b161cf }}">murales</a>, de la <a href="{{ link:0506b916-7bcd-4439-9f60-83bc09897e5f }}">peinture</a> et des&nbsp;<a href="{{ link:10b59c5d-b48f-4a9d-a4d2-f8911cc96ca3 }}">illustrations.</a></p>'
 site_footer: '<p>En savoir plus sur ma&nbsp;<a href="{{ link:de627bca-7595-429e-9b41-ad58703916d7 }}">biographie</a> et mes informations pour&nbsp;<a href="{{ link:3f8f535c-e0b3-4a74-b2d8-a2a645574eac }}">me contacter</a>.</p><p>Découvrez mon <a href="https://www.facebook.com/vincent.arnold.art/" target="_blank">facebook</a>, mon <a href="https://www.instagram.com/vincent.arnold.art/">instagram</a> et mon <a href="https://www.behance.net/arnold_vincent" target="_blank">behance</a> pour d''avantage de photos.</p>'
 author_name: 'Simon Arnold'

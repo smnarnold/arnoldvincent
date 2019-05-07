@@ -12,10 +12,26 @@
   {{ theme:css src="main" tag="true" }}
   <style>
     :root {
+      {{ if artwork_background_color }}
+        --background: {{ artwork_background_color }};
+      {{ elseif page_background_color }}
+        --background: {{ page_background_color }};
+      {{ else }}
+        --background: {{ background_color }};
+      {{ /if }}
+
+      {{ if artwork_text_color }}
+        --text: {{ artwork_text_color }};
+      {{ elseif page_text_color }}
+        --text: {{ page_text_color }};
+      {{ else }}
+        --text: {{ text_color }};
+      {{ /if }}
+
       {{ if artwork_highlight_color }}
-        --highlight: {{ artwork_highlight_color }}
+        --highlight: {{ artwork_highlight_color }};
       {{ elseif page_highlight_color }}
-        --highlight: {{ page_highlight_color }}
+        --highlight: {{ page_highlight_color }};
       {{ else }}
         --highlight: {{ highlight_color }};
       {{ /if }}

@@ -1,12 +1,29 @@
 hide: true
 fields:
+  page_styles_label:
+    type: section
+    display: 'Apparence'
+  page_background_color:
+    format: hex
+    control: hue
+    show_opacity: false
+    type: colorpicker
+    width: 33
+    display: Couleur de l'arrière-Plan
+  page_text_color:
+    format: hex
+    control: hue
+    show_opacity: false
+    type: colorpicker
+    width: 33
+    display: Couleur du texte
   page_highlight_color:
     format: hex
     control: hue
     show_opacity: false
     type: colorpicker
-    display: 'Couleur d''accent'
     width: 33
+    display: "Couleur d'Accent"
   components:
     type: partial
     display: Components

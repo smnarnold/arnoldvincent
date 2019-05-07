@@ -2,6 +2,7 @@ components:
   -
     type: artworks-custom-hub
     artworks_list:
+      - 7d650364-b5fc-4a48-b823-dfa6ca30a211
       - 5ecbd84c-7f63-4dc8-a289-96f9b270de28
       - 975fc23a-aeae-4c37-bb67-cbaeaf532190
       - 812fa638-beba-45db-8760-f37e74e50efe

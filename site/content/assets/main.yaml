@@ -34,3 +34,7 @@ assets:
     title: 'The touchable'
     alt: 'The touchable'
     focus: 60-40
+  artworks/d-construction1.jpg:
+    title: D-construction
+    alt: D-construction
+    focus: 56-78

@@ -2,6 +2,8 @@ sections:
   main:
     display: Main
     fields:
+      title:
+        display: Titre
       artwork_type:
         max_items: '1'
         sort: 'title:asc'
@@ -79,11 +81,47 @@ sections:
         fieldset: social_medias_partial
         type: partial
         display: 'Réseaux sociaux'
+      artwork_styles_label:
+        type: section
+        display: 'Apparence'
+      artwork_background_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 33
+        display: Couleur de l'arrière-Plan
+      artwork_text_color:
+        format: hex
+        control: hue
+        show_opacity: false
+        type: colorpicker
+        width: 33
+        display: Couleur du texte
       artwork_highlight_color:
         format: hex
         control: hue
         show_opacity: false
         type: colorpicker
-        display: 'Couleur d''accent'
+        width: 33
+        display: "Couleur d'Accent"
+  sidebar:
+    display: Sidebar
+    fields:
+      artwork_year:
+        allow_blank: true
+        allow_time: false
+        require_time: false
+        earliest_date: 'January 1, 2000'
+        format: y-m-d
+        input_format: 'MMM YYYY'
+        type: date
+        display: Date
+        width: 50
+      artwork_dimension:
+        fieldset: partial_size
+        type: partial
+        width: 100
+        display: Dimension
 taxonomies: true
 title: Artwork
