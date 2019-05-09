@@ -17,6 +17,11 @@ body {
   line-height: 1.8;
 }
 
+::selection { 
+  background: var(--highlight); 
+  color: var(--background);
+}
+
 main {
   position: relative;
 

@@ -31,31 +31,31 @@ sections:
         instructions: 'Icône dans l''onglet du navigateur _(200x200px)_'
       styles_label:
         type: section
-        display: 'Apparence'
+        display: Apparence
       background_color:
         format: hex
         control: hue
         show_opacity: false
         type: colorpicker
         width: 33
-        display: Couleur de l'arrière-Plan
+        display: 'Couleur de l''arrière-Plan'
       text_color:
         format: hex
         control: hue
         show_opacity: false
         type: colorpicker
         width: 33
-        display: Couleur du texte
+        display: 'Couleur du texte'
       highlight_color:
         format: hex
         control: hue
         show_opacity: false
         type: colorpicker
         width: 33
-        display: "Couleur d'Accent"
+        display: 'Couleur d''Accent'
       nav_label:
         type: section
-        display: 'Navigation'
+        display: Navigation
       site_menu:
         buttons:
           - bold
@@ -96,4 +96,31 @@ sections:
         display: 'Pied de page'
         localizable: true
         width: 50
+      dictionnary_label:
+        type: section
+        display: Dictionnaire
+      lbl_year:
+        type: text
+        localizable: true
+        width: 25
+        display: Année
+        default: Année
+      lbl_exhibition:
+        type: text
+        localizable: true
+        width: 25
+        display: Exposition
+        default: Exposition
+      client:
+        type: text
+        localizable: true
+        width: 25
+        display: Client
+        default: Client
+      lbl_dimensions:
+        type: text
+        width: 25
+        display: dimensions
+        default: Dimensions
+        localizable: true
 taxonomies: true

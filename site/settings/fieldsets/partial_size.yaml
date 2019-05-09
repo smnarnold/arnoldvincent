@@ -2,7 +2,15 @@ sections:
   main:
     display: Main
     fields:
-      unite_de_mesure:
+      width:
+        type: text
+        width: 33
+        display: Largeur
+      height:
+        type: text
+        width: 33
+        display: Hauteur
+      size_unit:
         options:
           CMT: Centimètres
           MTR: Mètres
@@ -11,14 +19,6 @@ sections:
         type: select
         display: 'Unité de mesure'
         default: INH
-        width: 50
-      width:
-        type: text
-        width: 50
-        display: Largeur
-      height:
-        type: text
-        width: 50
-        display: Hauteur
+        width: 33
 taxonomies: true
 title: 'Partial - Size'

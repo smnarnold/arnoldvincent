@@ -4,16 +4,7 @@ sections:
     fields:
       title:
         display: Titre
-      artwork_type:
-        max_items: '1'
-        sort: 'title:asc'
-        label: '{{ title }}'
-        collection:
-          - type-doeuvres
-        mode: tags
-        type: collection
-        width: 33
-        display: Type
+        width: 66
       artwork_clients:
         max_items: '4'
         sort: 'titler:asc'
@@ -34,6 +25,24 @@ sections:
         type: collection
         width: 33
         display: Collaborateur(s)
+      artwork_exhibition:
+        type: text
+        width: 33
+        display: Exposition
+      artwork_photo_credits:
+        sort: 'title:asc'
+        label: '{{ title }}'
+        collection:
+          - personnes
+        mode: tags
+        type: collection
+        width: 33
+        display: Crédit(s) photo
+      artwork_dimension:
+        fieldset: partial_size
+        type: partial
+        width: 100
+        display: Dimensions
       artwork_description:
         buttons:
           - h2
@@ -60,15 +69,6 @@ sections:
         localizable: true
         display: Description
         width: 66
-      artwork_preview:
-        container: main
-        folder: artworks
-        restrict: true
-        max_files: 1
-        mode: grid
-        type: assets
-        width: 33
-        display: aperçu
       artwork_components:
         fieldset: page_components
         type: partial
@@ -108,6 +108,16 @@ sections:
   sidebar:
     display: Sidebar
     fields:
+      artwork_type:
+        max_items: '1'
+        sort: 'title:asc'
+        label: '{{ title }}'
+        collection:
+          - type-doeuvres
+        mode: tags
+        type: collection
+        width: 100
+        display: Type
       artwork_year:
         allow_blank: true
         allow_time: false
@@ -117,11 +127,15 @@ sections:
         input_format: 'MMM YYYY'
         type: date
         display: Date
-        width: 50
-      artwork_dimension:
-        fieldset: partial_size
-        type: partial
         width: 100
-        display: Dimension
+      artwork_preview:
+        container: main
+        folder: artworks
+        restrict: true
+        max_files: 1
+        mode: grid
+        type: assets
+        width: 100
+        display: Aperçu
 taxonomies: true
 title: Artwork

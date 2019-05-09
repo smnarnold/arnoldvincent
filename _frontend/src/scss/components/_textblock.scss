@@ -1,0 +1,28 @@
+.textblock {
+  &__wrapper {
+    display: flex;
+  }
+
+  &__title {
+    @extend %h1;
+  }
+
+  &__text {
+    order: 1;
+    flex: 0 1 auto;
+
+    > * {
+      @extend %remove-ends-vertical-margin;
+    }
+
+    &.is-two-columns {
+      column-count: 2;
+    }
+  }
+
+  .metas {
+    order: 0;
+    flex: 0 0 33.333%;
+    padding-right: var(--gutter);
+  }
+}

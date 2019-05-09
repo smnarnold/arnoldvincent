@@ -30,4 +30,11 @@ sections:
                 fieldset: pictures_gallery
                 type: partial
                 display: 'Galerie d''image'
+          textblock:
+            display: Bloc de texte
+            fields:
+              textblock:
+                fieldset: textblock
+                type: partial
+                display: 'Bloc de texte'
 hide: true
