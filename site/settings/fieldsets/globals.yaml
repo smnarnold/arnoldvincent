@@ -111,7 +111,7 @@ sections:
         width: 25
         display: Exposition
         default: Exposition
-      client:
+      lbl_client:
         type: text
         localizable: true
         width: 25
@@ -123,4 +123,9 @@ sections:
         display: dimensions
         default: Dimensions
         localizable: true
+      lbl_photos_credits:
+        type: text
+        localizable: true
+        width: 25
+        display: 'Crédits photos'
 taxonomies: true

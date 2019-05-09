@@ -1,0 +1,9 @@
+<span itemprop="creator" itemscope itemtype="http://schema.org/Person">{{#
+#}}{{ if website or behance or facebook or instagram }}{{#
+  #}}<a href="{{ website or behance or facebook or instagram }}" target="_blank">{{ /if }}{{#
+    #}}<span itemprop="name">{{ nickname or title }}</span>{{#
+    #}}<meta itemprop="sameAs" content="{{ website or behance or facebook or instagram }}">{{#
+#}}{{ if website or behance or facebook or instagram }}</a>{{ /if }}{{#
+#}}<meta itemprop="familyName" content="{{ last_name }}">{{#
+#}}<meta itemprop="givenName" content="{{ first_name }}">{{#
+#}}</span>

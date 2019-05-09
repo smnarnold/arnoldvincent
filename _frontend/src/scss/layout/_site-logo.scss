@@ -4,8 +4,8 @@
   flex: 0 0 100%;
   font-weight: bold;
   justify-content: center;
-  text-decoration: none;
   margin: 0.5em 0;
+  text-decoration: none;
 }
 
 @include media-breakpoint-up(sm) {
@@ -18,6 +18,5 @@
 @include media-breakpoint-up(md) {
   .site-logo {
     display: inline-block;
-    
   }
 }

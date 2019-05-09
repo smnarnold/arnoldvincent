@@ -8,8 +8,8 @@
   }
 
   &__text {
-    order: 1;
     flex: 0 1 auto;
+    order: 1;
 
     > * {
       @extend %remove-ends-vertical-margin;
@@ -21,8 +21,8 @@
   }
 
   .metas {
-    order: 0;
     flex: 0 0 33.333%;
+    order: 0;
     padding-right: var(--gutter);
   }
 }
