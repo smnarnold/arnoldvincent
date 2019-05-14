@@ -1,9 +1,11 @@
-<span itemprop="creator" itemscope itemtype="http://schema.org/Person">{{#
-#}}{{ if website or behance or facebook or instagram }}{{#
-  #}}<a href="{{ website or behance or facebook or instagram }}" target="_blank">{{ /if }}{{#
-    #}}<span itemprop="name">{{ nickname or title }}</span>{{#
-    #}}<meta itemprop="sameAs" content="{{ website or behance or facebook or instagram }}">{{#
-#}}{{ if website or behance or facebook or instagram }}</a>{{ /if }}{{#
+<span {{ if microdata }}itemprop="{{ type }}" itemscope itemtype="http://schema.org/Person"{{ /if }} {{ if invisible }}class="sr-only"{{ /if }}>{{#
+#}}{{ if id !== site_owner }}{{ if website or behance or facebook or instagram }}{{#
+  #}}<a href="{{website or behance or facebook or instagram }}" target="_blank">{{ /if }}{{ /if }}{{#
+    #}}<span {{ if microdata }}itemprop="name"{{ /if }}>{{ nickname or title }}</span>{{#
+    #}}{{ if microdata }}<meta itemprop="sameAs" content="{{ website or behance or facebook or instagram }}">{{ /if }}{{#
+#}}{{ if id !== site_owner }}{{ if website or behance or facebook or instagram }}</a>{{ /if }}{{ /if }}{{#
+#}}{{ if microdata }}{{#
 #}}<meta itemprop="familyName" content="{{ last_name }}">{{#
 #}}<meta itemprop="givenName" content="{{ first_name }}">{{#
+#}}{{ /if }}{{#
 #}}</span>

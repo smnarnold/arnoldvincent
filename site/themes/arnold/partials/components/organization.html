@@ -1,0 +1,7 @@
+<span itemprop="{{ type }}" itemscope itemtype="http://schema.org/Organization">{{#
+#}}{{ if website or behance or facebook or instagram }}{{#
+  #}}<a href="{{website or behance or facebook or instagram }}" target="_blank">{{ /if }}{{#
+    #}}<span itemprop="name">{{ title }}</span>{{#
+    #}}<meta itemprop="sameAs" content="{{ website or behance or facebook or instagram }}">{{#
+#}}{{ if website or behance or facebook or instagram }}</a>{{ /if }}{{#
+#}}</span>
