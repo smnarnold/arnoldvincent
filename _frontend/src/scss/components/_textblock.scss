@@ -1,6 +1,11 @@
 .textblock {
   &__wrapper {
     display: flex;
+    flex-wrap: wrap;
+
+    > * {
+      @extend %remove-ends-vertical-margin;
+    }
   }
 
   &__title {
@@ -14,15 +19,51 @@
     > * {
       @extend %remove-ends-vertical-margin;
     }
-
-    &.is-two-columns {
-      column-count: 2;
-    }
   }
 
   .metas {
-    flex: 0 0 33.333%;
-    order: 0;
-    padding-right: var(--gutter);
+    order: 1;
+    flex: 0 0 100%;
+    padding: var(--gutter) 0 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .textblock {
+    &__wrapper {
+      flex-wrap: nowrap;
+    }
+
+    .metas {
+      flex: 0 0 46%;
+    }
+
+    &--metas-left {
+      .metas {
+        order: 0;
+        padding: 0 var(--gutter) 0 0;
+      }
+    }
+  
+    &--metas-right {
+      .metas {
+        order: 1;
+        padding: 0 0 0 var(--gutter);
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .textblock {
+    &__text {
+      &--multi-column {
+        column-count: 2;
+      }
+    }
+
+    .metas {
+      flex: 0 0 33.333%;
+    }
   }
 }

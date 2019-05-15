@@ -21,9 +21,9 @@ components:
     type: textblock
     textblock_text: '<p>Identité visuelle pour Amalgam, le festival d’art urbain qui se déroule à Sherbrooke. Le chiffre 5 est au coeur de la déclinaison afin de souligner ses 5 ans d’existence. Le béton, le gallon de peinture, la perche, la canette aérosol sont tous des éléments rappelant l’art mural.</p>'
     textblock_title: 'true'
-    textblock_metas: 'true'
     textblock_width: normal
-    textblock_columns: 2
+    textblock_columns: multi-column
+    textblock_metas: '--metas-right'
 artwork_type: d4b35900-49f1-4255-9e22-07f05eec1d15
 artwork_year: 16-08-01
 artwork_preview: /assets/artworks/amalgam.jpg

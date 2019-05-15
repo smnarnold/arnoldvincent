@@ -1,0 +1,76 @@
+<div class="metas">
+  {{ if artwork_feat }}
+    <div class="metas__row">
+      <div class="metas__cell">
+        {{ relate:artwork_feat }}{{#
+          #}}{{ partial src="components/person" microdata="true" type="contributor" }}{{#
+          #}}{{ if index < total_results }}, {{ /if }}{{#
+        #}}{{ /relate:artwork_feat }}
+
+        {{ relate:site_owner }}{{#
+          #}}&&nbsp;{{ partial src="components/person" microdata="true" type="artist" }}{{#
+        #}}{{ /relate:site_owner }}
+      </div>
+    </div>
+  {{ else }}
+    {{ relate:site_owner }}{{#
+      #}}&&nbsp;{{ partial src="components/person" microdata="true" type="artist" invisible="true" }}{{#
+    #}}{{ /relate:site_owner }}
+  {{ /if}}
+
+  {{ relate:artwork_type }}
+    <meta itemprop="artform" content="{{ title }}">
+  {{ /relate:artwork_type }}
+
+  {{ if artwork_exhibition }}
+    <div class="metas__row">
+      <div class="metas__cell metas__cell--label">{{ lbl_exhibition }}:&nbsp;</div>
+      <div class="metas__cell">{{ artwork_exhibition }}</div>
+    </div>
+  {{ /if}}
+
+  {{ if artwork_clients }}
+    <div class="metas__row">
+      <div class="metas__cell metas__cell--label">{{ if artwork_clients | count > 1}}{{ lbl_client | plural:total_results }}{{ else }}{{ lbl_client }}{{ /if }}:&nbsp;</div>
+      <div class="metas__cell">
+        {{ relate:artwork_clients }}{{#
+        #}}{{ if first_name}}{{ partial src="components/person" microdata="true" type="producer" }}{{#
+        #}}{{ else }}{{ partial src="components/organization" microdata="true" type="producer" }}{{ /if }}{{#
+        #}}{{ if index < total_results -1 }}, {{ elseif index < total_results}} &&nbsp;{{ /if }}{{#
+      #}}{{ /relate:artwork_clients }}
+      </div>
+    </div>
+  {{ /if }}
+
+  {{ if artwork_photo_credits }}
+    <div class="metas__row">
+      <div class="metas__cell metas__cell--label">{{ lbl_photos_credits }}:&nbsp;</div>
+      <div class="metas__cell">
+        {{ relate:artwork_photo_credits }}{{#
+          #}}{{ partial src="components/person" }}{{#
+          #}}{{ if index < total_results -1 }}, {{ elseif index < total_results}} &&nbsp;{{ /if }}{{#
+        #}}{{ /relate:artwork_photo_credits }}
+      </div>
+    </div>
+  {{ /if}}
+
+  <span itemprop="width" itemscope itemtype="http://schema.org/QuantitativeValue">{{#
+  #}}<span itemprop="value">{{ width }}</span>{{#
+  #}}<meta itemprop="unitCode" content="{{ size_unit }}">{{#
+#}}</span>x{{#
+  #}}<span itemprop="height" itemscope itemtype="http://schema.org/QuantitativeValue">{{#
+  #}}<span itemprop="value">{{ height }}</span>{{#
+  #}}<meta itemprop="unitCode" content="{{ size_unit }}">{{#
+#}}</span>{{#
+#}}{{ if size_unit == 'FOT' }}{{ if locale == 'fr' }} pi{{ else }} ft{{ /if }}
+{{ elseif size_unit == 'INH' }}{{ if locale == 'fr' }} po{{ else }} in{{ /if }}
+{{ elseif size_unit == 'CMT' }} cm
+{{ elseif size_unit == 'MTR' }} m
+{{ /if }}
+
+  {{ if artwork_year }}
+    <div class="metas__row">
+      <time class="metas__cell" itemprop="dateCreated">{{ artwork_year format="Y" }}</time>
+    </div>
+  {{ /if}}
+</div>

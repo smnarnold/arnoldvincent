@@ -8,17 +8,26 @@ sections:
           'true': Visible
         type: select
         display: Titre
-        width: 50
+        width: 33
         localizable: true
         default: 'false'
       textblock_metas:
         options:
           'false': Invisibles
-          'true': Visibles
+          '--metas-left': 'À gauche'
+          '--metas-right': 'À droite'
         type: select
         display: Metas
-        width: 50
+        width: 33
         default: 'false'
+      textblock_columns:
+        options:
+          normal: Normal
+          multi-column: 'En colonnes'
+        type: select
+        display: 'Afficher le texte'
+        width: 33
+        default: '1'
       textblock_text:
         buttons:
           - bold
@@ -41,21 +50,5 @@ sections:
         type: bard
         display: Texte
         localizable: true
-      textblock_width:
-        options:
-          normal: Normal
-          narrow: Serré
-        type: select
-        display: Largeur
-        width: 50
-        default: normal
-      textblock_columns:
-        options:
-          1: 'en 1 colonne'
-          2: 'en 2 colonnes'
-        type: select
-        display: 'Afficher le texte'
-        width: 50
-        default: '1'
 taxonomies: false
 title: Textblock

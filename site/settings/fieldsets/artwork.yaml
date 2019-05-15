@@ -5,6 +5,8 @@ sections:
       title:
         display: Titre
         width: 66
+        type: text
+        localizable: true
       artwork_clients:
         max_items: '4'
         sort: 'titler:asc'
@@ -37,11 +39,10 @@ sections:
         mode: tags
         type: collection
         width: 33
-        display: Crédit(s) photo
+        display: 'Crédit(s) photo'
       artwork_dimension:
         fieldset: partial_size
         type: partial
-        width: 100
         display: Dimensions
       artwork_description:
         buttons:
@@ -68,7 +69,6 @@ sections:
         type: bard
         localizable: true
         display: Description
-        width: 66
       artwork_components:
         fieldset: page_components
         type: partial
@@ -83,28 +83,28 @@ sections:
         display: 'Réseaux sociaux'
       artwork_styles_label:
         type: section
-        display: 'Apparence'
+        display: Apparence
       artwork_background_color:
         format: hex
         control: hue
         show_opacity: false
         type: colorpicker
         width: 33
-        display: Couleur de l'arrière-Plan
+        display: 'Couleur de l''arrière-Plan'
       artwork_text_color:
         format: hex
         control: hue
         show_opacity: false
         type: colorpicker
         width: 33
-        display: Couleur du texte
+        display: 'Couleur du texte'
       artwork_highlight_color:
         format: hex
         control: hue
         show_opacity: false
         type: colorpicker
         width: 33
-        display: "Couleur d'Accent"
+        display: 'Couleur d''Accent'
   sidebar:
     display: Sidebar
     fields:
@@ -116,7 +116,6 @@ sections:
           - type-doeuvres
         mode: tags
         type: collection
-        width: 100
         display: Type
       artwork_year:
         allow_blank: true
@@ -127,7 +126,6 @@ sections:
         input_format: 'MMM YYYY'
         type: date
         display: Date
-        width: 100
       artwork_preview:
         container: main
         folder: artworks
@@ -135,7 +133,6 @@ sections:
         max_files: 1
         mode: grid
         type: assets
-        width: 100
         display: Aperçu
 taxonomies: true
 title: Artwork
