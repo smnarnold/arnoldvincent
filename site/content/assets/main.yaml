@@ -76,3 +76,34 @@ assets:
     title: 'La course folle'
     alt: 'La course folle'
     focus: 70-57
+  artworks/soie-dentaire.jpg:
+    title: 'Soie dentaire'
+    alt: 'Soie dentaire'
+    focus: 39-63
+  artworks/abenaquis2.jpg:
+    title: Abenaquis
+    alt: Abenaquis
+    focus: 32-37
+  artworks/stjean.jpg:
+    title: St-Jean
+    alt: St-Jean
+    focus: 27-45
+  artworks/autobus.jpg:
+    title: 'Autobus Rural'
+    alt: 'Autobus Rural'
+    focus: 96-53
+  artworks/amalgam1.jpg:
+    title: Diversité
+    alt: Diversité
+  artworks/habs_complet.jpg:
+    title: 'Jean Béliveau'
+    alt: 'Jean Béliveau'
+    focus: 59-19
+  artworks/hyptnose-1.jpg:
+    title: 'Hypnose du centre-ville'
+    alt: 'Hypnose du centre-ville'
+    focus: 50-55
+  artworks/litterature.jpg:
+    title: 'Litterature vivante'
+    alt: 'Litterature vivante'
+    focus: 51-68

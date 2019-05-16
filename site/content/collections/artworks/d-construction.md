@@ -12,7 +12,6 @@ artwork_photo_credits:
 width: '65'
 height: '12'
 size_unit: FOT
-artwork_description: '<p>La rue Notre-Dame est en construction et en changement depuis quelques années et le but derrière cette murale était de reflétée le chaos des chantiers de construction.</p>'
 components:
   -
     type: pictures-gallery
@@ -28,6 +27,7 @@ components:
     textblock_text: '<p>La rue Notre-Dame est en construction et en changement depuis quelques années et le but derrière cette murale était de reflétée le chaos des chantiers de construction.</p>'
     textblock_width: normal
     textblock_columns: normal
+facebook: 'https://www.facebook.com/vincent.arnold.art/posts/995857867223711'
 instagram: 'https://www.instagram.com/p/BYvupvODiU4/'
 artwork_background_color: '#000000'
 artwork_text_color: '#ffffff'
@@ -35,5 +35,6 @@ artwork_highlight_color: '#ffb285'
 artwork_type: 2f69e825-adc8-487c-83c9-a45dd0c73911
 artwork_year: 17-04-01
 artwork_preview: /assets/artworks/d-construction1.jpg
+artwork_description: '<p>La rue Notre-Dame est en construction et en changement depuis quelques années et le but derrière cette murale était de reflétée le chaos des chantiers de construction.</p>'
 unite_de_mesure: FOT
 id: 7d650364-b5fc-4a48-b823-dfa6ca30a211

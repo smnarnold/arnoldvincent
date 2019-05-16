@@ -60,7 +60,7 @@ sections:
         width: 50
       split_image:
         container: main
-        folder: /
+        folder: artworks
         restrict: false
         max_files: 1
         mode: grid
