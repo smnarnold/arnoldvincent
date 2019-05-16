@@ -7,6 +7,14 @@
     @extend %href;
   }
 
+  svg {
+    height: 1em;
+
+    > * {
+      fill: currentColor;
+    }
+  }
+
   [itemprop='name'] {
     white-space: nowrap;
   }
@@ -26,6 +34,12 @@
       letter-spacing: 0.75px;
       margin: 0.35em 0 0;
       text-transform: uppercase;
+    }
+  }
+
+  &__social {
+    &::before {
+      display: none;
     }
   }
 }

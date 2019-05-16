@@ -2,5 +2,4 @@ site_menu: '<p>I do&nbsp;<a href="{{ link:4a5710c9-b409-4595-bb77-59cf15b161cf }
 site_footer: '<p>Learn more about my&nbsp;<a href="{{ link:de627bca-7595-429e-9b41-ad58703916d7 }}">biography</a>&nbsp;and my&nbsp;<a href="{{ link:3f8f535c-e0b3-4a74-b2d8-a2a645574eac }}">contacts</a>.<br></p><p>Check out my&nbsp;<a href="https://www.instagram.com/vincent.arnold.art/" target="_blank">instagram</a>, <a href="https://www.facebook.com/vincent.arnold.art/" target="_blank">facebook</a>&nbsp;and my&nbsp;<a href="https://www.behance.net/arnold_vincent" target="_blank">behance</a>&nbsp;for more pictures.</p>'
 lbl_year: Year
 lbl_exhibition: Exhibition
-lbl_photos_credits: 'Photos credits'
 id: d9bfc09a-3a90-41d3-8acc-3f551f8432af

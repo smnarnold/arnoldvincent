@@ -1,0 +1,71 @@
+sections:
+  main:
+    display: Main
+    fields:
+      split_title:
+        options:
+          'false': Invisible
+          'true': Visible
+        type: select
+        display: Titre
+        width: 25
+        localizable: true
+        default: 'false'
+      split_metas:
+        options:
+          'false': Invisibles
+          'true': Visible
+        type: select
+        display: Metas
+        width: 25
+        default: 'false'
+      split_columns:
+        options:
+          normal: Normal
+          multi-column: 'En colonnes'
+        type: select
+        display: Colonnes
+        width: 25
+        default: normal
+      split_layout:
+        options:
+          reversed: 'Média en 1er'
+          normal: 'Média en 2e'
+        type: select
+        width: 25
+        display: Affichage
+        default: normal
+      split_text:
+        buttons:
+          - bold
+          - italic
+          - underline
+          - unorderedlist
+          - orderedlist
+          - removeformat
+          - quote
+          - anchor
+        style: sans
+        spellcheck: false
+        allow_source: true
+        allow_internal_links: true
+        link_noopener: false
+        link_noreferrer: false
+        target_blank: false
+        semantic_elements: true
+        restrict_assets: false
+        type: bard
+        display: Texte
+        localizable: true
+        width: 50
+      split_image:
+        container: main
+        folder: /
+        restrict: false
+        max_files: 1
+        mode: grid
+        type: assets
+        width: 50
+        display: Image
+taxonomies: false
+title: Split

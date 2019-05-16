@@ -15,8 +15,8 @@ sections:
         instructions: '_(vide = tous types confondus)_'
       artworks-hub_sort:
         options:
-          'date:desc': '+ récentes aux + anciennes'
-          'date:asc': '+ anciennes aux + récentes'
+          'artwork_year:desc': '+ récentes aux + anciennes'
+          'artwork_year:asc': '+ anciennes aux + récentes'
           'title:asc': 'Ordre alphabétique (A-Z)'
           'title:desc': 'Ordre alphabétique inverse (Z-A)'
           random: Aléatoirement

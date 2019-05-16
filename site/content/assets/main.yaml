@@ -38,3 +38,41 @@ assets:
     title: D-construction
     alt: D-construction
     focus: 56-78
+  artworks/spoutnik_complet.jpg:
+    title: Pacman
+    alt: Pacman
+  artworks/spoutnik_pacman.jpg:
+    title: Pacman
+    alt: Pacman
+    focus: 66-37
+  artworks/symposium_faliase.jpg:
+    title: Symposium
+    alt: Symposium
+    focus: 73-18
+  artworks/6.jpg:
+    title: CSRS
+    alt: CSRS
+    focus: 30-55
+  artworks/menottes_complet.jpg:
+    title: 'Les menottes'
+    alt: 'Les menottes'
+    focus: 52-30
+  artworks/urbania_details.jpg:
+    title: Urbania
+    alt: Urbania
+    focus: 30-27
+  artworks/urbania_overall.jpg:
+    title: Urbania
+    alt: Urbania
+    focus: 3-45
+  artworks/25_1.jpg:
+    title: '25'
+    alt: '25'
+  artworks/grandpa-fillewww.jpg:
+    title: 'Transformation ferroviaire'
+    alt: 'Transformation ferroviaire'
+    focus: 57-43
+  artworks/carrefourgiratoire1.jpg:
+    title: 'La course folle'
+    alt: 'La course folle'
+    focus: 70-57

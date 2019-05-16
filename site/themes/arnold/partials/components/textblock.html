@@ -8,7 +8,9 @@
 
     <div class="textblock__wrapper">
       {{ if textblock_text }}
-        <div class="textblock__text textblock__text--{{ textblock_columns }}" itemprop="description">{{ textblock_text }}</div>
+        <div class="textblock__content">
+            <div class="textblock__text textblock__text--{{ textblock_columns }}" itemprop="description">{{ textblock_text }}</div>
+        </div>
       {{ /if }}
 
       {{ if textblock_metas !== 'false' }}

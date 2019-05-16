@@ -8,13 +8,21 @@
     }
   }
 
+  &__content{
+    flex: 0 1 auto;
+    order: 1;
+
+    > * {
+      @extend %remove-ends-vertical-margin;
+    }
+  }
+
   &__title {
     @extend %h1;
   }
 
   &__text {
-    flex: 0 1 auto;
-    order: 1;
+    margin: 20px 0;
 
     > * {
       @extend %remove-ends-vertical-margin;

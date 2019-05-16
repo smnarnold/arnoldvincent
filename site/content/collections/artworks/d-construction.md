@@ -24,10 +24,11 @@ components:
   -
     type: textblock
     textblock_title: 'true'
-    textblock_metas: 'true'
+    textblock_metas: '--metas-left'
     textblock_text: '<p>La rue Notre-Dame est en construction et en changement depuis quelques années et le but derrière cette murale était de reflétée le chaos des chantiers de construction.</p>'
     textblock_width: normal
-    textblock_columns: '1'
+    textblock_columns: normal
+instagram: 'https://www.instagram.com/p/BYvupvODiU4/'
 artwork_background_color: '#000000'
 artwork_text_color: '#ffffff'
 artwork_highlight_color: '#ffb285'

@@ -31,10 +31,18 @@ sections:
                 type: partial
                 display: 'Galerie d''image'
           textblock:
-            display: Bloc de texte
+            display: 'Bloc de texte'
             fields:
               textblock:
                 fieldset: textblock
                 type: partial
                 display: 'Bloc de texte'
+          split:
+            display: Split
+            fields:
+              split:
+                fieldset: split
+                type: partial
+                display: Split
+        localizable: true
 hide: true

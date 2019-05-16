@@ -25,9 +25,9 @@ sections:
           normal: Normal
           multi-column: 'En colonnes'
         type: select
-        display: 'Afficher le texte'
+        display: Colonnes
         width: 33
-        default: '1'
+        default: normal
       textblock_text:
         buttons:
           - bold
@@ -49,6 +49,5 @@ sections:
         restrict_assets: false
         type: bard
         display: Texte
-        localizable: true
 taxonomies: false
 title: Textblock
