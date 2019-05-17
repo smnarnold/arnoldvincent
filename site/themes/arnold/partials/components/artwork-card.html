@@ -5,10 +5,11 @@
           <source srcset="{{ glide:artwork_preview width='724' }}" media="(-webkit-min-device-pixel-ratio: 2) and (min-width: 993px)">
           <source srcset="{{ glide:artwork_preview width='600' }}" media="(-webkit-min-device-pixel-ratio: 2) and (min-width: 769px)">
           <source srcset="{{ glide:artwork_preview width='620' }}" media="(-webkit-min-device-pixel-ratio: 2) and (min-width: 575px)">
+          <source srcset="{{ glide:artwork_preview width='455' }}" media="(-webkit-min-device-pixel-ratio: 2)">
           <source srcset="{{ glide:artwork_preview width='362' }}" media="(min-width: 993px)">
           <source srcset="{{ glide:artwork_preview width='300' }}" media="(min-width: 769px)">
           <source srcset="{{ glide:artwork_preview width='310' }}" media="(min-width: 575px)">
-          <img src="{{ artwork_preview }}" width="{{ width }}px" height="{{ height}}px" alt="{{ alt }}" style="object-position: {{ focus | background_position }};" />
+          <img src="{{ glide:artwork_preview width='300' }}" width="{{ width }}px" height="{{ height}}px" alt="{{ alt }}" style="object-position: {{ focus | background_position }};" />
       </picture>
     {{ /assets:artwork_preview }}
 

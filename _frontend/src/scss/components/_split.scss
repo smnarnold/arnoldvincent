@@ -23,16 +23,20 @@
 
   &__text {
     margin: 20px 0;
+
+    > * {
+      @extend %remove-ends-vertical-margin;
+    }
   }
 
   &__media {
+    position: relative;
     order: 0;
 
     img {
       display: block;
       max-width: 100%;
       height: auto;
-      margin: 0 0 20px;
     }
   }
 
@@ -40,6 +44,11 @@
     display: block;
     max-width: 100%;
     margin: 0 auto;
+
+    img {
+      max-width: calc(100% + var(--gutter) * 2);
+      margin: 0 calc(var(--gutter) * -1) var(--gutter);
+    }
   }
 }
 
@@ -61,8 +70,11 @@
 
     &__media {
       order: 1;
+    }
 
+    &__picture {
       img {
+        max-width: 100%;
         margin: 0;
       }
     }
@@ -80,12 +92,6 @@
   }
 }
 
-@media (min-width: 992px) {
-  .split {
-    
-  }
-}
-
 @media (min-width: 1200px) {
   .split {
     &__text {
@@ -95,4 +101,3 @@
     }
   }
 }
-

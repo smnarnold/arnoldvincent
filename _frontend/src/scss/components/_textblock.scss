@@ -8,7 +8,7 @@
     }
   }
 
-  &__content{
+  &__content {
     flex: 0 1 auto;
     order: 1;
 
@@ -30,8 +30,8 @@
   }
 
   .metas {
-    order: 1;
     flex: 0 0 100%;
+    order: 1;
     padding: var(--gutter) 0 0;
   }
 }
@@ -52,7 +52,7 @@
         padding: 0 var(--gutter) 0 0;
       }
     }
-  
+
     &--metas-right {
       .metas {
         order: 1;

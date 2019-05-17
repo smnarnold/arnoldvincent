@@ -107,3 +107,98 @@ assets:
     title: 'Litterature vivante'
     alt: 'Litterature vivante'
     focus: 51-68
+  artworks/partage6.jpg:
+    title: 'Partage St-François'
+    alt: 'Partage St-François'
+    focus: 30-50
+  artworks/foufs_complet.jpg:
+    title: 'Foufounes Électriques'
+    alt: 'Foufounes Électriques'
+    focus: 66-44
+  artworks/romeosgin3.jpg:
+    title: 'Romeo''s gin'
+    alt: 'Romeo''s gin'
+    focus: 44-36
+  artworks/alcohol-2019.jpg:
+    title: 'Alcohol 5%'
+    alt: 'Alcohol 5%'
+    focus: 52-43
+  artworks/toupet-jaune1-1.jpg:
+    title: 'Toupet jaune'
+    alt: 'Toupet jaune'
+    focus: 48-61
+  artworks/she.jpg:
+    title: She
+    alt: She
+    focus: 51-36
+  artworks/hi-eggplant-umbrella.jpg:
+    title: 'Hi eggplant umbrella'
+    alt: 'Hi eggplant umbrella'
+    focus: 44-35
+  artworks/alliance-mariage2.jpg:
+    title: 'Anneau de mariage'
+    alt: 'Anneau de mariage'
+    focus: 61-34
+  artworks/les-fleurs-fanees.jpg:
+    title: 'Roses Sombres'
+    alt: 'Roses Sombres'
+    focus: 42-61
+  artworks/3-blades.jpg:
+    title: '3 lames'
+    alt: '3 lames'
+  artworks/parapluie2v2.jpg:
+    title: Parapluie
+    alt: Parapluie
+    focus: 21-35
+  artworks/halterophile.jpg:
+    title: Halterophilie
+    alt: Halterophilie
+    focus: 47-24
+  artworks/artflip1.jpg:
+    title: Artflip
+    alt: Artflip
+  artworks/restricted-tought.jpg:
+    title: 'Restricted tought'
+    alt: 'Restricted tought'
+    focus: 49-45
+  artworks/guess_who2.jpg:
+    title: 'Guess who?'
+    alt: 'Guess who?'
+  artworks/anti-cover.jpg:
+    title: Anti-guide
+    alt: Anti-guide
+  artworks/fumee-verte.jpg:
+    title: 'Fumée verte'
+    alt: 'Fumée verte'
+    focus: 35-41
+  artworks/sentiments-modernes.jpg:
+    title: 'Sentiments modernes'
+    alt: 'Sentiments modernes'
+    focus: 34-21
+  artworks/details_face.jpg:
+    title: 'Hypnose moderne'
+    alt: 'Hypnose moderne'
+  artworks/voyeurisme-contemporain.jpg:
+    title: 'Voyeurisme contemporain'
+    alt: 'Voyeurisme contemporain'
+    focus: 32-35
+  artworks/skates-1.jpg:
+    title: Skates
+    alt: Skates
+    focus: 43-36
+  artworks/skateboards.jpg:
+    title: Skates
+    alt: Skates
+    focus: 28-22
+  artworks/details.jpg:
+    title: Justice
+    alt: Justice
+    focus: 40-28
+  artworks/selfie-de-guerre.jpg:
+    title: 'Selfie de guerre'
+    alt: 'Selfie de guerre'
+    focus: 63-53
+  artworks/rubrique_necro6.jpg:
+    title: 'Rubrique nécrologique'
+    alt: 'Rubrique nécrologique'
+    focus: 54-39
