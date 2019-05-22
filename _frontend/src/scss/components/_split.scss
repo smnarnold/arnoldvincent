@@ -110,12 +110,6 @@
 
 @media (min-width: 1200px) {
   .split {
-    &__text {
-      &--multi-column {
-        column-count: 2;
-      }
-    }
-
     &__media {
       &--landscape {
         flex: 0 0 66.666666%;
