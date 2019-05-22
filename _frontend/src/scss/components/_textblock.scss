@@ -24,6 +24,10 @@
   &__text {
     margin: 20px 0;
 
+    a {
+      @extend %href;
+    }
+
     > * {
       @extend %remove-ends-vertical-margin;
     }

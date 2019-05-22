@@ -23,6 +23,7 @@ components:
     textblock_metas: '--metas-left'
     textblock_columns: multi-column
     textblock_text: '<p>Murale pour le partage Saint-François, un organisme qui vient en aide de plusieurs façons aux personnes dans le besoin et qui met en scène des personnages colorés qui sont outillés par l''organisme afin de vaincre leurs démons <em>(</em><em>silhouettes noires)</em>. En parallèle, l’organisation est représentée par les silhouettes blanches bienveillantes.</p>'
+behance: 'https://www.behance.net/gallery/45428453/Partage-Saint-Francois'
 artwork_type: 2f69e825-adc8-487c-83c9-a45dd0c73911
 artwork_year: 16-10-01
 artwork_preview: /assets/artworks/partage6.jpg

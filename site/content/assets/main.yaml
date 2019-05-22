@@ -202,3 +202,31 @@ assets:
     title: 'Rubrique nécrologique'
     alt: 'Rubrique nécrologique'
     focus: 54-39
+  artworks/palais-des-congres3.jpg:
+    title: 'Palais des congrès'
+    alt: 'Palais des congrès'
+    focus: 41-59
+  artworks/ceci31.jpg:
+    title: Ceci-Cela
+    alt: Ceci-Cela
+    focus: 48-22
+  artworks/buveur1.jpg:
+    title: Buveur
+    alt: Buveur
+    focus: 33-26
+  artworks/hommage_details.jpg:
+    title: Hommage
+    alt: Hommage
+    focus: 50-47
+  artworks/bouffe1v2.jpg:
+    title: 'Bacon de la terre'
+    alt: 'Bacon de la terre'
+    focus: 39-33
+  artworks/aphelie-thumb.jpg:
+    title: Aphelie
+    alt: Aphelie
+    focus: 32-20
+  artworks/vidangeur-2.jpg:
+    title: Vidangeur
+    alt: Vidangeur
+    focus: 48-67

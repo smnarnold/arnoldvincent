@@ -23,6 +23,11 @@
 
   &__text {
     margin: 20px 0;
+    column-gap: var(--gutter);
+
+    a {
+      @extend %href;
+    }
 
     > * {
       @extend %remove-ends-vertical-margin;
@@ -35,7 +40,8 @@
 
     img {
       display: block;
-      max-width: 100%;
+      max-width: calc(100% + var(--gutter) * 2);
+      margin: 0 calc(var(--gutter) * -1) var(--gutter);
       height: auto;
     }
   }
@@ -44,11 +50,6 @@
     display: block;
     max-width: 100%;
     margin: 0 auto;
-
-    img {
-      max-width: calc(100% + var(--gutter) * 2);
-      margin: 0 calc(var(--gutter) * -1) var(--gutter);
-    }
   }
 }
 
@@ -58,24 +59,21 @@
       flex-wrap: nowrap;
     }
 
-    &__content,
-    &__media {
-      flex: 0 0 50%;
-    }
-
     &__content {
+      flex: 0 1 auto;
       order: 0;
       padding: 0 var(--gutter) 0 0;
     }
 
     &__media {
+      flex: 0 0 50%;
       order: 1;
-    }
 
-    &__picture {
       img {
+        width: auto;
+        height: auto;
         max-width: 100%;
-        margin: 0;
+        margin: 0 auto;
       }
     }
 
@@ -92,11 +90,35 @@
   }
 }
 
+@media (min-width: 992px) {
+  .split {
+    &__media {
+      &--portrait {
+        flex: 0 0 33.333333%;
+
+        + .split__content {
+          .split__text {
+            &--multi-column {
+              column-count: 2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 1200px) {
   .split {
     &__text {
       &--multi-column {
         column-count: 2;
+      }
+    }
+
+    &__media {
+      &--landscape {
+        flex: 0 0 66.666666%;
       }
     }
   }
