@@ -10,7 +10,7 @@ sections:
         display: Titre
         width: 25
         localizable: true
-        default: 'false'
+        default: 'true'
       split_metas:
         options:
           'false': Invisibles
@@ -18,11 +18,11 @@ sections:
         type: select
         display: Metas
         width: 25
-        default: 'false'
+        default: 'true'
       split_columns:
         options:
-          normal: Normal
-          multi-column: 'En colonnes'
+          normal: Simple
+          multi-column: Multiple
         type: select
         display: Colonnes
         width: 25

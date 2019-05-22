@@ -10,7 +10,7 @@ sections:
         display: Titre
         width: 33
         localizable: true
-        default: 'false'
+        default: 'true'
       textblock_metas:
         options:
           'false': Invisibles
@@ -19,11 +19,11 @@ sections:
         type: select
         display: Metas
         width: 33
-        default: 'false'
+        default: '--metas-left'
       textblock_columns:
         options:
-          normal: Normal
-          multi-column: 'En colonnes'
+          normal: Simple
+          multi-column: Multiple
         type: select
         display: Colonnes
         width: 33
