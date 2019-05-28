@@ -29,10 +29,6 @@ class Site {
         slidesPerView: 1.2,
         slidesPerColumn: 2,
         spaceBetween: 10,
-        mousewheel: {
-          releaseOnEdges: true,
-          sensitivity: 20,
-        },
         breakpointsInverse: true,
         breakpoints: {
           576: {
@@ -59,10 +55,6 @@ class Site {
       const swiper = new Swiper(gallery, {
         slidesPerView: 'auto',
         spaceBetween: 10,
-        mousewheel: {
-          releaseOnEdges: true,
-          sensitivity: 20,
-        },
         on: {
           imagesReady: () => {
             gallery.parentNode.classList.add('is-ready');

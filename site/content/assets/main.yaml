@@ -230,3 +230,30 @@ assets:
     title: Vidangeur
     alt: Vidangeur
     focus: 48-67
+  artworks/antispecisme-1.jpg:
+    title: Antispecisme
+    alt: Antispecisme
+  artworks/dino-9.jpg:
+    title: Dino
+    alt: Dino
+  artworks/le-fou-du-roi-1.jpg:
+    focus: 50-31
+  artworks/le-diable-en-personne.jpg:
+    title: 'Le diable en personne'
+    alt: 'Le diable en personne'
+    focus: 51-17
+  artworks/exit_through21.jpg:
+    title: 'Exit through the gift shop'
+    alt: 'Exit through the gift shop'
+    focus: 59-51
+  artworks/yellow_moon1.jpg:
+    title: 'Yellow moon'
+    alt: 'Yellow moon'
+    focus: 50-39
+  artworks/becs2.jpg:
+    title: 'Les becs'
+    alt: 'Les becs'
+  artworks/detour13.jpg:
+    title: Détour
+    alt: Détour
+    focus: 46-31

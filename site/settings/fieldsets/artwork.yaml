@@ -92,6 +92,16 @@ sections:
         mode: tags
         type: collection
         display: Type
+      artwork_medium:
+        type: text
+        localizable: true
+        display: Technique
+      artwork_surface:
+        type: text
+        localizable: true
+        display: Surface
+        show_when:
+          artwork_type: 'not null'
       artwork_year:
         allow_blank: true
         allow_time: false
@@ -109,5 +119,5 @@ sections:
         mode: grid
         type: assets
         display: Aperçu
-taxonomies: true
+taxonomies: false
 title: Artwork

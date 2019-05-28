@@ -22,8 +22,8 @@
   }
 
   &__text {
-    margin: 20px 0;
     column-gap: var(--gutter);
+    margin: 20px 0;
 
     a {
       @extend %href;
@@ -35,21 +35,21 @@
   }
 
   &__media {
-    position: relative;
     order: 0;
+    position: relative;
 
     img {
       display: block;
-      max-width: calc(100% + var(--gutter) * 2);
-      margin: 0 calc(var(--gutter) * -1) var(--gutter);
       height: auto;
+      margin: 0 calc(var(--gutter) * -1) var(--gutter);
+      max-width: calc(100% + var(--gutter) * 2);
     }
   }
 
   &__picture {
     display: block;
-    max-width: 100%;
     margin: 0 auto;
+    max-width: 100%;
   }
 }
 
@@ -70,10 +70,10 @@
       order: 1;
 
       img {
-        width: auto;
         height: auto;
-        max-width: 100%;
         margin: 0 auto;
+        max-width: 100%;
+        width: auto;
       }
     }
 
@@ -90,6 +90,7 @@
   }
 }
 
+/* stylelint-disable */
 @media (min-width: 992px) {
   .split {
     &__media {
@@ -107,6 +108,7 @@
     }
   }
 }
+/* stylelint-enable */
 
 @media (min-width: 1200px) {
   .split {

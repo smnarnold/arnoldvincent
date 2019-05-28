@@ -22,6 +22,19 @@
     <meta itemprop="artform" content="{{ title }}">
   {{ /relate:artwork_type }}
 
+  {{ if artwork_medium }}
+    <div class="metas__row">
+      <div class="metas__cell metas__cell--label">{{ lbl_medium }}:&nbsp;</div>
+      <div class="metas__cell">
+        <span itemprop="artMedium">{{ artwork_medium }}</span>
+        {{ if artwork_surface }}
+          {{ lbl_on }}
+          <span itemprop="artworkSurface">{{ artwork_surface }}</span>
+        {{ /if }}
+      </div>
+    </div>
+  {{ /if }}
+
   {{ if artwork_exhibition }}
     <div class="metas__row">
       <div class="metas__cell metas__cell--label">{{ lbl_exhibition }}:&nbsp;</div>

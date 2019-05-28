@@ -11,6 +11,8 @@ lbl_exhibition: Exposition
 lbl_client: Client
 lbl_dimensions: Dimensions
 lbl_photos_credits: Photos
+lbl_medium: Technique
+lbl_on: sur
 client: Client
 author_name: 'Simon Arnold'
 id: d9bfc09a-3a90-41d3-8acc-3f551f8432af

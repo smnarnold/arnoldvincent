@@ -120,7 +120,7 @@ sections:
       lbl_dimensions:
         type: text
         width: 25
-        display: dimensions
+        display: Dimensions
         default: Dimensions
         localizable: true
       lbl_photos_credits:
@@ -128,4 +128,14 @@ sections:
         localizable: true
         width: 25
         display: 'Crédits photos'
+      lbl_medium:
+        type: text
+        localizable: true
+        width: 25
+        display: 'Technique'
+      lbl_on:
+        type: text
+        localizable: true
+        width: 25
+        display: 'sur'
 taxonomies: true
