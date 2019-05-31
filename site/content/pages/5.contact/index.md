@@ -1,7 +1,7 @@
 title: Contact
 components:
   -
-    type: textblock
+    type: artwork_textblock
     textblock_title: 'false'
     textblock_metas: 'false'
     textblock_columns: normal

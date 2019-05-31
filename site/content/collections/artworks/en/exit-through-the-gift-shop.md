@@ -5,7 +5,7 @@ components:
       - /assets/artworks/exit_through21.jpg
       - /assets/artworks/exit_through11.jpg
   -
-    type: textblock
+    type: artwork_textblock
     textblock_title: 'true'
     textblock_metas: '--metas-right'
     textblock_columns: multi-column

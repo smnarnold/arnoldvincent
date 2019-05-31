@@ -6,7 +6,7 @@ components:
       - /assets/artworks/antan-2.jpg
       - /assets/artworks/antan-3.jpg
   -
-    type: textblock
+    type: artwork_textblock
     textblock_title: 'true'
     textblock_metas: '--metas-left'
     textblock_columns: multi-column

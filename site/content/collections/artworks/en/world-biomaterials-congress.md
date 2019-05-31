@@ -6,7 +6,7 @@ components:
       - /assets/artworks/palais-des-congres1-2.jpg
       - /assets/artworks/palais-des-congres2.jpg
   -
-    type: textblock
+    type: artwork_textblock
     textblock_title: 'true'
     textblock_metas: '--metas-left'
     textblock_columns: normal

@@ -6,7 +6,7 @@ components:
       - /assets/artworks/autobus-angle-2.jpg
       - /assets/artworks/autobus.jpg
   -
-    type: textblock
+    type: artwork_textblock
     textblock_title: 'true'
     textblock_metas: '--metas-left'
     textblock_columns: multi-column

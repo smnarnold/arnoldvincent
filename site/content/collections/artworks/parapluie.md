@@ -12,7 +12,7 @@ components:
       - /assets/artworks/parapluiev2.jpg
       - /assets/artworks/parapluie2v2.jpg
   -
-    type: textblock
+    type: artwork_textblock
     textblock_title: 'true'
     textblock_metas: '--metas-left'
     textblock_columns: normal

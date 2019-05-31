@@ -1,0 +1,28 @@
+sections:
+  main:
+    display: Main
+    fields:
+      textblock_title:
+        options:
+          'false': Invisible
+          'true': Visible
+        type: select
+        display: Titre
+        width: 33
+        localizable: true
+        default: 'true'
+      textblock_metas:
+        options:
+          'false': Invisibles
+          '--metas-left': 'À gauche'
+          '--metas-right': 'À droite'
+        type: select
+        display: Metas
+        width: 33
+        default: '--metas-left'
+      textblock:
+        fieldset: textblock
+        type: partial
+        localizable: true
+taxonomies: false
+title: Textblock

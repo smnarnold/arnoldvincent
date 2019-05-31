@@ -15,7 +15,7 @@ components:
       - /assets/artworks/dino-11.jpg
       - /assets/artworks/dino-12.jpg
   -
-    type: textblock
+    type: artwork_textblock
     textblock_title: 'true'
     textblock_metas: '--metas-right'
     textblock_columns: multi-column

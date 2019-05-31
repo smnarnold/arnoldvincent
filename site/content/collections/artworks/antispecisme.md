@@ -14,7 +14,7 @@ components:
       - /assets/artworks/antispecisme-4.jpg
       - /assets/artworks/antispecisme-5.jpg
   -
-    type: textblock
+    type: artwork_textblock
     textblock_title: 'true'
     textblock_metas: '--metas-left'
     textblock_columns: multi-column

@@ -19,7 +19,7 @@ components:
       - /assets/artworks/d-construction-extra-1.jpg
       - /assets/artworks/d-construction-extra-2-1.jpg
   -
-    type: textblock
+    type: artwork_textblock
     textblock_title: 'true'
     textblock_metas: '--metas-left'
     textblock_text: '<p>La rue Notre-Dame est en construction et en changement depuis quelques années et le but derrière cette murale était de reflétée le chaos des chantiers de construction.</p>'

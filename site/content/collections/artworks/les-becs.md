@@ -9,7 +9,7 @@ components:
       - /assets/artworks/becs1.jpg
       - /assets/artworks/becs2.jpg
   -
-    type: textblock
+    type: artwork_textblock
     textblock_title: 'true'
     textblock_metas: '--metas-right'
     textblock_columns: normal

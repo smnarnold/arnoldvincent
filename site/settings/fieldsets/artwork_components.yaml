@@ -9,11 +9,11 @@ sections:
         type: replicator
         display: Composantes
         sets:
-          textblock:
+          artwork_textblock:
             display: 'Bloc de texte'
             fields:
               textblock:
-                fieldset: textblock
+                fieldset: artwork_textblock
                 type: partial
                 display: 'Bloc de texte'
           artwork_split:

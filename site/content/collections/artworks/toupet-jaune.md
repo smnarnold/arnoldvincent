@@ -10,7 +10,7 @@ components:
       - /assets/artworks/toupet-jaune1-1.jpg
       - /assets/artworks/toupet-jaune2.jpg
   -
-    type: textblock
+    type: artwork_textblock
     textblock_title: 'true'
     textblock_metas: '--metas-left'
     textblock_columns: normal

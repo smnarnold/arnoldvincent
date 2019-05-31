@@ -16,7 +16,7 @@ components:
       - /assets/artworks/carrefourgiratoire11-1.jpg
       - /assets/artworks/carrefourgiratoire9.jpg
   -
-    type: textblock
+    type: artwork_textblock
     textblock_title: 'true'
     textblock_metas: '--metas-left'
     textblock_columns: multi-column

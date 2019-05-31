@@ -19,7 +19,7 @@ components:
       - /assets/artworks/1.jpg
       - /assets/artworks/csrc.jpg
   -
-    type: textblock
+    type: artwork_textblock
     textblock_title: 'true'
     textblock_metas: '--metas-left'
     textblock_columns: multi-column

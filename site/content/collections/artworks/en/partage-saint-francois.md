@@ -8,7 +8,7 @@ components:
       - /assets/artworks/partage5.jpg
       - /assets/artworks/partage4.jpg
   -
-    type: textblock
+    type: artwork_textblock
     textblock_title: 'true'
     textblock_metas: '--metas-left'
     textblock_columns: multi-column

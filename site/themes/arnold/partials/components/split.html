@@ -1,0 +1,37 @@
+<section class="section split split--{{ split_layout }}">
+  <div class="container">
+    
+    <div class="split__wrapper">
+      {{ if split_image }}
+        {{ assets:split_image }}
+          <div class="split__media split__media--{{ if width > height }}landscape{{ else }}portrait{{ /if }}">
+            <picture class="split__picture" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+              <source srcset="{{ glide:url height='1024' width='2400' fit='contain' }}" media="(-webkit-min-device-pixel-ratio: 2) and (min-height: 800px)">
+              <source srcset="{{ glide:url height='824' width='2400' fit='contain' }}" media="(-webkit-min-device-pixel-ratio: 2) and (min-height: 700px)">
+              <source srcset="{{ glide:url height='624' width='2400' fit='contain' }}" media="(-webkit-min-device-pixel-ratio: 2) and (min-height: 600px)">
+              <source srcset="{{ glide:url height='424' width='2400' fit='contain' }}" media="(-webkit-min-device-pixel-ratio: 2) and (min-height: 500px)">
+              <source srcset="{{ glide:url height='512' width='1200' fit='contain' }}" media="(min-height: 800px)">
+              <source srcset="{{ glide:url height='412' width='1200' fit='contain' }}" media="(min-height: 700px)">
+              <source srcset="{{ glide:url height='312' width='1200' fit='contain' }}" media="(min-height: 600px)">
+              <source srcset="{{ glide:url height='212' width='1200' fit='contain' }}" media="(min-height: 500px)">
+              <img src="{{ url }}" width="{{ width }}px" height="{{ height}}px" alt="{{ alt }}" class="js-popup-image" data-src="{{ url }}" itemprop='contentUrl' />
+              {{ if alt }}
+                <meta itemprop="name" content="{{ alt }}">
+              {{ /if }}
+            </picture>
+          </div>
+        {{ /assets:split_image }}
+      {{ /if }}
+
+      <div class="split__content">
+        {{ if split_title === 'true' }}
+          <h1 class="split__title" itemprop="name">{{ title }}</h1>
+        {{ /if}}
+
+        {{ if split_text }}
+          <div class="split__text split__text--{{ split_columns }}" itemprop="description">{{ split_text }}</div>
+        {{ /if }}
+      </div>
+    </div>
+  </div>
+</section>

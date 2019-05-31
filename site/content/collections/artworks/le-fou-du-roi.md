@@ -12,7 +12,7 @@ components:
       - /assets/artworks/le-fou-du-roi-4.jpg
       - /assets/artworks/le-fou-du-roi-5.jpg
   -
-    type: textblock
+    type: artwork_textblock
     textblock_title: 'true'
     textblock_metas: '--metas-left'
     textblock_columns: multi-column

@@ -23,13 +23,6 @@ sections:
                 fieldset: artworks-custom-hub
                 type: partial
                 display: 'Hub d''oeuvres personnalisé'
-          pictures-gallery:
-            display: 'Galerie d''images'
-            fields:
-              pictures-gallery:
-                fieldset: pictures_gallery
-                type: partial
-                display: 'Galerie d''image'
           textblock:
             display: 'Bloc de texte'
             fields:
@@ -44,5 +37,12 @@ sections:
                 fieldset: split
                 type: partial
                 display: Split
+          pictures-gallery:
+            display: 'Galerie d''images'
+            fields:
+              pictures-gallery:
+                fieldset: pictures_gallery
+                type: partial
+                display: 'Galerie d''image'
         localizable: true
 hide: true

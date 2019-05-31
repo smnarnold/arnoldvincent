@@ -10,7 +10,7 @@ components:
       - /assets/artworks/felix-2.jpg
       - /assets/artworks/felix-3.jpg
   -
-    type: textblock
+    type: artwork_textblock
     textblock_title: 'true'
     textblock_metas: '--metas-left'
     textblock_columns: normal

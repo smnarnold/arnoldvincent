@@ -11,7 +11,7 @@ components:
       - /assets/artworks/alliance-mariage3.jpg
       - /assets/artworks/alliance-mariage4.jpg
   -
-    type: textblock
+    type: artwork_textblock
     textblock_title: 'true'
     textblock_metas: '--metas-left'
     textblock_columns: normal

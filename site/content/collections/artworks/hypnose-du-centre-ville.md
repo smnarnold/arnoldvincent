@@ -12,7 +12,7 @@ components:
       - /assets/artworks/hyptnose-2.jpg
       - /assets/artworks/hyptnose-3.jpg
   -
-    type: textblock
+    type: artwork_textblock
     textblock_title: 'true'
     textblock_metas: '--metas-right'
     textblock_columns: multi-column

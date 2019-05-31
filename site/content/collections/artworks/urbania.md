@@ -9,7 +9,7 @@ artwork_photo_credits:
 size_unit: INH
 components:
   -
-    type: textblock
+    type: artwork_textblock
     textblock_title: 'true'
     textblock_metas: '--metas-right'
     textblock_columns: normal
