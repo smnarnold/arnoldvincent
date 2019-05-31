@@ -1,4 +1,4 @@
-<section class="section textblock">
+<section class="section textblock{{ if textblock_metas !== 'false' }} textblock{{ textblock_metas }}{{ /if }}">
   <div class="container">
     {{ if textblock_title === 'true' }}
     <div class="textblock__wrapper">
@@ -11,6 +11,10 @@
         <div class="textblock__content">
             <div class="textblock__text textblock__text--{{ textblock_columns }}" itemprop="description">{{ textblock_text }}</div>
         </div>
+      {{ /if }}
+
+      {{ if textblock_metas !== 'false' }}
+        {{ partial src="components/artwork-meta" }}
       {{ /if }}
     </div>
   </div>
