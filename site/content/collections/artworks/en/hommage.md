@@ -1,6 +1,6 @@
 components:
   -
-    type: split
+    type: artwork_split
     split_title: 'true'
     split_metas: 'false'
     split_columns: normal
@@ -8,7 +8,7 @@ components:
     split_text: '<p>A Cuban movie poster honoring a person well-known in a small village. Like a gravestone, this film is a testament to his life. Even though this last is absent throughout the film, the poster shows a character who comes to life again under the filmstrips like a kind of reincarnation.</p><p><br></p>'
     split_image: /assets/artworks/hommage.jpg
   -
-    type: split
+    type: artwork_split
     split_title: 'false'
     split_metas: 'true'
     split_columns: normal

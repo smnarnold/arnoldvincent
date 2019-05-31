@@ -2,7 +2,7 @@ title: 'Qui est-ce?'
 size_unit: INH
 components:
   -
-    type: split
+    type: artwork_split
     split_title: 'true'
     split_metas: 'true'
     split_columns: normal
@@ -10,7 +10,7 @@ components:
     split_image: /assets/artworks/guess_who2.jpg
     split_text: '<p>Cet ouvrage est une actualisation du jeu Qui&nbsp;Suis-Je?&nbsp;<em>(en anglais: Guess Who?)</em>.&nbsp;</p>'
   -
-    type: split
+    type: artwork_split
     split_title: 'false'
     split_metas: 'false'
     split_columns: multi-column

@@ -16,11 +16,11 @@ sections:
                 fieldset: textblock
                 type: partial
                 display: 'Bloc de texte'
-          split:
+          artwork_split:
             display: Split
             fields:
               split:
-                fieldset: split
+                fieldset: artwork_split
                 type: partial
                 display: Split
           pictures-gallery:

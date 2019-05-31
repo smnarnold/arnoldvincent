@@ -6,7 +6,7 @@ artwork_exhibition: Cinégrafismo
 size_unit: INH
 components:
   -
-    type: split
+    type: artwork_split
     split_title: 'true'
     split_metas: 'false'
     split_columns: multi-column
@@ -14,7 +14,7 @@ components:
     split_text: '<p>Affiche d’un film Cubain rendant hommage à une personne connue d’un petit village. À la manière d’une pierre tombale, ce film est un témoignage de sa vie. Même si ce dernier est absent tout au long du film, l’affiche démontre un personnage qui reprend vie sous les pellicules un peu comme une sorte réincarnation.</p><p><br></p>'
     split_image: /assets/artworks/hommage.jpg
   -
-    type: split
+    type: artwork_split
     split_title: 'false'
     split_metas: 'true'
     split_columns: normal

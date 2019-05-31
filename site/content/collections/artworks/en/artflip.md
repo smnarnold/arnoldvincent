@@ -1,6 +1,6 @@
 components:
   -
-    type: split
+    type: artwork_split
     split_title: 'true'
     split_metas: 'false'
     split_columns: normal
@@ -8,7 +8,7 @@ components:
     split_text: '<p>With the help of Clôde Beaupré , we had the pleasure of creating Artflip. The exhibition took place at the Fresh Paint Gallery in Montreal and at the Cultural Center of the borough of Jacques-Cartier in Sherbrooke.</p>'
     split_image: /assets/artworks/artflip1.jpg
   -
-    type: split
+    type: artwork_split
     split_title: 'false'
     split_metas: 'true'
     split_columns: normal

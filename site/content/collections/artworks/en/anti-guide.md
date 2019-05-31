@@ -1,6 +1,6 @@
 components:
   -
-    type: split
+    type: artwork_split
     split_title: 'true'
     split_metas: 'false'
     split_columns: normal
@@ -8,7 +8,7 @@ components:
     split_text: '<p>This artist book is meant to be the opposite of a usual career guide. It makes fun of traditional jobs and those books which are supposed to interest the young reader but in reality are not.&nbsp;</p>'
     split_image: /assets/artworks/anti7.jpg
   -
-    type: split
+    type: artwork_split
     split_title: 'false'
     split_metas: 'true'
     split_columns: normal

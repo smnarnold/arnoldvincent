@@ -1,7 +1,7 @@
 title: 'Guess who?'
 components:
   -
-    type: split
+    type: artwork_split
     split_title: 'true'
     split_metas: 'true'
     split_columns: normal
@@ -9,7 +9,7 @@ components:
     split_image: /assets/artworks/guess_who2.jpg
     split_text: '<p>This work is a revamping of the Guess Who? game.&nbsp;</p>'
   -
-    type: split
+    type: artwork_split
     split_title: 'false'
     split_metas: 'false'
     split_columns: multi-column

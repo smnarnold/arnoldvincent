@@ -1,7 +1,7 @@
 title: 'saint-jean-baptiste day'
 components:
   -
-    type: split
+    type: artwork_split
     split_title: 'true'
     split_metas: 'true'
     split_columns: normal

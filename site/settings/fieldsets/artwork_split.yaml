@@ -1,0 +1,27 @@
+sections:
+  main:
+    display: Main
+    fields:
+      split_title:
+        options:
+          'false': Invisible
+          'true': Visible
+        type: select
+        display: Titre
+        width: 25
+        localizable: true
+        default: 'true'
+      split_metas:
+        options:
+          'false': Invisibles
+          'true': Visible
+        type: select
+        display: Metas
+        width: 25
+        default: 'true'
+      split:
+        fieldset: split
+        type: partial
+        localizable: true
+taxonomies: false
+title: 'Artwork - Split'

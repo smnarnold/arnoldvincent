@@ -7,7 +7,7 @@ artwork_photo_credits:
 size_unit: INH
 components:
   -
-    type: split
+    type: artwork_split
     split_title: 'true'
     split_metas: 'false'
     split_columns: normal
@@ -15,7 +15,7 @@ components:
     split_text: '<p>Avec l’aide de Clôde Beaupré, nous avons eu le plaisir de créer Artflip. L''exposition a eu lieu à la Galerie de peinture fraîche à Montréal et au Centre culturel de l''arrondissement de Jacques-Cartier à Sherbrooke.&nbsp;</p>'
     split_image: /assets/artworks/artflip1.jpg
   -
-    type: split
+    type: artwork_split
     split_title: 'false'
     split_metas: 'true'
     split_columns: normal

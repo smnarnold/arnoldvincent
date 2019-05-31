@@ -4,7 +4,7 @@ artwork_photo_credits:
 size_unit: INH
 components:
   -
-    type: split
+    type: artwork_split
     split_title: 'true'
     split_metas: 'false'
     split_columns: normal
@@ -12,7 +12,7 @@ components:
     split_text: '<p>Ce livre d’artiste est le contraire d’un guide de carrière habituel. C’est-à-dire qu’il ridiculise ces livres qui sont supposés êtres jeunes et amusants ainsi que les professions traditionnelles.&nbsp;</p>'
     split_image: /assets/artworks/anti7.jpg
   -
-    type: split
+    type: artwork_split
     split_title: 'false'
     split_metas: 'true'
     split_columns: normal

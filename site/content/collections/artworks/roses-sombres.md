@@ -7,7 +7,7 @@ height: '11.875'
 size_unit: INH
 components:
   -
-    type: split
+    type: artwork_split
     split_title: 'true'
     split_metas: 'true'
     split_columns: normal
