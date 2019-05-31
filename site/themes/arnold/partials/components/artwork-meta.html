@@ -41,18 +41,28 @@
       <div class="metas__cell">{{ artwork_exhibition }}</div>
     </div>
   {{ /if}}
+  
+  {{ if artwork_level == "academic" }}
+    {{ if artwork_school }}
+      <div class="metas__row">
+          <div class="metas__cell">
 
-  {{ if artwork_clients }}
-    <div class="metas__row">
-      <div class="metas__cell metas__cell--label">{{ if artwork_clients | count > 1}}{{ lbl_client | plural:total_results }}{{ else }}{{ lbl_client }}{{ /if }}:&nbsp;</div>
-      <div class="metas__cell">
-        {{ relate:artwork_clients }}{{#
-        #}}{{ if first_name}}{{ partial src="components/person" microdata="true" type="producer" }}{{#
-        #}}{{ else }}{{ partial src="components/organization" microdata="true" type="producer" }}{{ /if }}{{#
-        #}}{{ if index < total_results -1 }}, {{ elseif index < total_results}} &&nbsp;{{ /if }}{{#
-      #}}{{ /relate:artwork_clients }}
+          </div>
       </div>
-    </div>
+    {{ /if }}
+  {{ else }}
+    {{ if artwork_clients }}
+      <div class="metas__row">
+        <div class="metas__cell metas__cell--label">{{ if artwork_clients | count > 1}}{{ lbl_client | plural:total_results }}{{ else }}{{ lbl_client }}{{ /if }}:&nbsp;</div>
+        <div class="metas__cell">
+          {{ relate:artwork_clients }}{{#
+          #}}{{ if first_name}}{{ partial src="components/person" microdata="true" type="producer" }}{{#
+          #}}{{ else }}{{ partial src="components/organization" microdata="true" type="producer" }}{{ /if }}{{#
+          #}}{{ if index < total_results -1 }}, {{ elseif index < total_results}} &&nbsp;{{ /if }}{{#
+        #}}{{ /relate:artwork_clients }}
+        </div>
+      </div>
+    {{ /if }}
   {{ /if }}
 
   {{ if artwork_photo_credits }}

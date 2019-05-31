@@ -1,7 +1,7 @@
 .section {
   display: block;
   overflow: hidden;
-  padding: var(--gutter) 0;
+  margin: var(--gutter) 0;
   position: relative;
   width: 100%;
 
@@ -24,8 +24,8 @@
   }
 
   &--no-margin {
-    padding-bottom: 0;
-    padding-top: 0;
+    margin-bottom: 0;
+    margin-top: 0;
   }
 }
 

@@ -1,5 +1,10 @@
 hide: true
 fields:
+  title:
+    display: Titre
+    width: 66
+    type: text
+    localizable: true
   page_styles_label:
     type: section
     display: 'Apparence'

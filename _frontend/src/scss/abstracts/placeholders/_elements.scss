@@ -48,8 +48,6 @@
   @extend %remove-ends-vertical-margin;
 
   list-style-position: outside; // hanging-punctuation
-  margin-bottom: 1em;
-  margin-top: 0;
   padding-left: 0;
 
   &:empty {

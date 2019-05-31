@@ -37,6 +37,7 @@ sections:
         default: normal
       split_text:
         buttons:
+          - h2
           - bold
           - italic
           - underline

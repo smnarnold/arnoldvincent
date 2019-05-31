@@ -7,17 +7,16 @@ sections:
         width: 66
         type: text
         localizable: true
-      artwork_clients:
-        max_items: '4'
-        sort: 'titler:asc'
+      artwork_type:
+        max_items: '1'
+        sort: 'title:asc'
         label: '{{ title }}'
         collection:
-          - clients
-          - personnes
+          - type-doeuvres
         mode: tags
         type: collection
         width: 33
-        display: Client(s)
+        display: Type
       artwork_feat:
         sort: 'title:asc'
         label: '{{ title }}'
@@ -25,7 +24,7 @@ sections:
           - personnes
         mode: tags
         type: collection
-        width: 33
+        width: 66
         display: Collaborateur(s)
       artwork_exhibition:
         type: text
@@ -40,12 +39,24 @@ sections:
         type: collection
         width: 33
         display: 'Crédit(s) photo'
+      artwork_medium:
+        type: text
+        localizable: true
+        width: 33
+        display: Technique
+      artwork_surface:
+        type: text
+        localizable: true
+        width: 33
+        display: Surface
+        show_when:
+          artwork_type: 'not null'
       artwork_dimension:
         fieldset: partial_size
         type: partial
         display: Dimensions
       artwork_components:
-        fieldset: page_components
+        fieldset: artwork_components
         type: partial
         localizable: true
         display: Components
@@ -83,25 +94,49 @@ sections:
   sidebar:
     display: Sidebar
     fields:
-      artwork_type:
+      artwork_level:
+        options:
+          pro: Pro
+          academic: Scolaire
+        inline: true
+        type: radio
+        display: Niveau
+        default: pro
+      artwork_clients:
+        max_items: '4'
+        sort: 'titler:asc'
+        label: '{{ title }}'
+        collection:
+          - clients
+          - personnes
+        mode: tags
+        type: collection
+        display: Client(s)
+        show_when:
+          artwork_level: pro
+      artwork_school:
         max_items: '1'
         sort: 'title:asc'
         label: '{{ title }}'
         collection:
-          - type-doeuvres
+          - clients
         mode: tags
         type: collection
-        display: Type
-      artwork_medium:
-        type: text
-        localizable: true
-        display: Technique
-      artwork_surface:
-        type: text
-        localizable: true
-        display: Surface
+        display: École
+        default: 80efd029-bae7-4dcb-9a2f-0176f40f90a2
         show_when:
-          artwork_type: 'not null'
+          artwork_level: academic
+      artwork_teacher:
+        max_items: '1'
+        sort: 'title:asc'
+        label: '{{ title }}'
+        collection:
+          - personnes
+        mode: tags
+        type: collection
+        display: Professeur
+        show_when:
+          artwork_level: academic
       artwork_year:
         allow_blank: true
         allow_time: false

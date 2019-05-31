@@ -30,6 +30,7 @@ sections:
         default: normal
       textblock_text:
         buttons:
+          - h2
           - bold
           - italic
           - underline

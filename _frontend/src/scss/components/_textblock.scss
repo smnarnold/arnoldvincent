@@ -21,6 +21,14 @@
     @extend %h1;
   }
 
+  h2 {
+    @extend %h2;
+  }
+
+  ul {
+    @extend %list;
+  }
+
   &__text {
     margin: 20px 0;
 
@@ -46,8 +54,18 @@
       flex-wrap: nowrap;
     }
 
+    h2 {
+      column-span: all;
+    }
+
     .metas {
       flex: 0 0 46%;
+    }
+
+    &__text {
+      &--multi-column {
+        column-count: 2;
+      }
     }
 
     &--metas-left {
@@ -55,12 +73,24 @@
         order: 0;
         padding: 0 var(--gutter) 0 0;
       }
+
+      &__text {
+        &--multi-column {
+          column-count: 1;
+        }
+      }
     }
 
     &--metas-right {
       .metas {
         order: 1;
         padding: 0 0 0 var(--gutter);
+      }
+
+      &__text {
+        &--multi-column {
+          column-count: 1;
+        }
       }
     }
   }

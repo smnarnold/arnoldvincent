@@ -21,6 +21,14 @@
     @extend %h1;
   }
 
+  h2 {
+    @extend %h2;
+  }
+
+  ul {
+    @extend %list;
+  }
+
   &__text {
     column-gap: var(--gutter);
     margin: 20px 0;
