@@ -1,4 +1,5 @@
 title: Détour
+artwork_type: d4b35900-49f1-4255-9e22-07f05eec1d15
 artwork_photo_credits:
   - 9048dfa1-6c4f-4a78-ab52-5df3ea2395a1
 size_unit: INH
@@ -25,7 +26,9 @@ components:
       - /assets/artworks/detour102.jpg
       - /assets/artworks/detour112.jpg
 artwork_highlight_color: '#c43908'
-artwork_type: d4b35900-49f1-4255-9e22-07f05eec1d15
+artwork_level: academic
+artwork_school: 80efd029-bae7-4dcb-9a2f-0176f40f90a2
+artwork_teacher: 7a0035f2-08df-4867-8ccf-4b40433cbbca
 artwork_year: 10-03-01
 artwork_preview: /assets/artworks/detour13.jpg
 id: da3587c2-1e09-4d8b-bcbc-a47080def89a

@@ -132,10 +132,15 @@ sections:
         type: text
         localizable: true
         width: 25
-        display: 'Technique'
+        display: Technique
+      lbl_teacher:
+        type: text
+        localizable: true
+        width: 25
+        display: Professeur
       lbl_on:
         type: text
         localizable: true
         width: 25
-        display: 'sur'
+        display: sur
 taxonomies: true

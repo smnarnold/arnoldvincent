@@ -1,4 +1,5 @@
 title: Anti-guide
+artwork_type: 40b34722-51da-48b4-b983-e9a90a97d6f6
 artwork_photo_credits:
   - 9048dfa1-6c4f-4a78-ab52-5df3ea2395a1
 size_unit: INH
@@ -57,7 +58,9 @@ components:
 artwork_background_color: '#000000'
 artwork_text_color: '#ffffff'
 artwork_highlight_color: '#fff94f'
-artwork_type: 40b34722-51da-48b4-b983-e9a90a97d6f6
+artwork_level: academic
+artwork_school: 80efd029-bae7-4dcb-9a2f-0176f40f90a2
+artwork_teacher: 4f30c43e-133b-4002-9ba4-23fac5eae0d4
 artwork_year: 12-03-01
 artwork_preview: /assets/artworks/anti-cover.jpg
 id: 21574535-05ef-4e05-8db5-41efc8dc35d7

@@ -1,4 +1,5 @@
 title: Ceci-Celà
+artwork_type: d4b35900-49f1-4255-9e22-07f05eec1d15
 size_unit: INH
 components:
   -
@@ -21,7 +22,10 @@ components:
       - /assets/artworks/ceci111.jpg
 artwork_background_color: '#eef2fe'
 artwork_highlight_color: '#d596a2'
-artwork_type: d4b35900-49f1-4255-9e22-07f05eec1d15
+artwork_level: academic
+artwork_school: 80efd029-bae7-4dcb-9a2f-0176f40f90a2
+artwork_teacher:
+  - e3633942-9899-459e-a43f-add57781f043
 artwork_year: 12-03-01
 artwork_preview: /assets/artworks/ceci31.jpg
 id: 237207e3-5b12-4d46-872e-7567327de290

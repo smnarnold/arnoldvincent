@@ -12,7 +12,9 @@ lbl_client: Client
 lbl_dimensions: Dimensions
 lbl_photos_credits: Photos
 lbl_medium: Technique
+lbl_teacher: Professeur
 lbl_on: sur
+artwork_teacher: Professeur
 client: Client
 author_name: 'Simon Arnold'
 id: d9bfc09a-3a90-41d3-8acc-3f551f8432af

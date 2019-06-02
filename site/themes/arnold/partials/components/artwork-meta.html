@@ -46,14 +46,28 @@
     {{ if artwork_school }}
       <div class="metas__row">
           <div class="metas__cell">
-
+              {{ relate:artwork_school }}{{#
+                #}}{{ partial src="components/organization" microdata="false" }}{{#
+              #}}{{ /relate:artwork_school }}
           </div>
+      </div>
+    {{ /if }}
+
+    {{ if artwork_teacher }}
+      <div class="metas__row">
+        <div class="metas__cell metas__cell--label">{{ if artwork_teacher:count > 1}}{{ lbl_teacher | plural:total_results }}{{ else }}{{ lbl_teacher }}{{ /if }}:&nbsp;</div>
+        <div class="metas__cell">
+          {{ relate:artwork_teacher }}{{#
+            #}}{{ partial src="components/person" }}{{#
+            #}}{{ if index < total_results -1 }}, {{ elseif index < total_results}} &&nbsp;{{ /if }}{{#
+          #}}{{ /relate:artwork_teacher }}
+        </div>
       </div>
     {{ /if }}
   {{ else }}
     {{ if artwork_clients }}
       <div class="metas__row">
-        <div class="metas__cell metas__cell--label">{{ if artwork_clients | count > 1}}{{ lbl_client | plural:total_results }}{{ else }}{{ lbl_client }}{{ /if }}:&nbsp;</div>
+        <div class="metas__cell metas__cell--label">{{ if artwork_clients:count > 1}}{{ lbl_client | plural:total_results }}{{ else }}{{ lbl_client }}{{ /if }}:&nbsp;</div>
         <div class="metas__cell">
           {{ relate:artwork_clients }}{{#
           #}}{{ if first_name}}{{ partial src="components/person" microdata="true" type="producer" }}{{#

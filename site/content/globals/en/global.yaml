@@ -3,5 +3,7 @@ site_footer: '<p>Learn more about my&nbsp;<a href="{{ link:de627bca-7595-429e-9b
 lbl_year: Year
 lbl_exhibition: Exhibition
 lbl_medium: Medium
+lbl_teacher: Teacher
 lbl_on: 'on'
+artwork_teacher: Teacher
 id: d9bfc09a-3a90-41d3-8acc-3f551f8432af

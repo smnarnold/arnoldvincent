@@ -1,5 +1,5 @@
 title: 'Rubrique nécrologique'
-artwork_exhibition: Chromatic
+artwork_type: 40b34722-51da-48b4-b983-e9a90a97d6f6
 artwork_photo_credits:
   - 263a8307-e73b-4b95-bd35-5f2b9c8a796a
 size_unit: INH
@@ -43,7 +43,11 @@ components:
 artwork_background_color: '#000000'
 artwork_text_color: '#ffffff'
 artwork_highlight_color: '#c40504'
-artwork_type: 40b34722-51da-48b4-b983-e9a90a97d6f6
+artwork_level: academic
+artwork_school: 80efd029-bae7-4dcb-9a2f-0176f40f90a2
+artwork_teacher:
+  - 7a0035f2-08df-4867-8ccf-4b40433cbbca
+  - 4f30c43e-133b-4002-9ba4-23fac5eae0d4
 artwork_year: 11-03-01
 artwork_preview: /assets/artworks/rubrique_necro6.jpg
 id: d03f290b-e6cb-4c86-af7f-d6f5303801bb

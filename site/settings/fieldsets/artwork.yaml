@@ -127,7 +127,7 @@ sections:
         show_when:
           artwork_level: academic
       artwork_teacher:
-        max_items: '1'
+        max_items: '3'
         sort: 'title:asc'
         label: '{{ title }}'
         collection:
