@@ -18,6 +18,24 @@ sections:
         width: 25
         display: Affichage
         default: normal
+      split_vertical_align:
+        options:
+          top: 'Vers le haut'
+          center: 'Centré'
+          bottom: 'Vers le bas'
+        type: select
+        width: 25
+        display: Alignement vertical
+        default: top
+      split_horizontal_align:
+        options:
+          left: 'À gauche'
+          center: 'Centré'
+          right: 'À droite'
+        type: select
+        width: 25
+        display: Alignement horizontal
+        default: left
       '':
         type: section
       split_text:

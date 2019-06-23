@@ -23,7 +23,7 @@
         {{ /assets:split_image }}
       {{ /if }}
 
-      <div class="split__content">
+      <div class="split__content split__content--vertical-{{ split_vertical_align}} split__content--horizontal-{{ split_horizontal_align}}">
         {{ if split_title === 'true' }}
           <h1 class="split__title" itemprop="name">{{ title }}</h1>
         {{ /if}}

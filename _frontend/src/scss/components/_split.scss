@@ -65,12 +65,49 @@
   .split {
     &__wrapper {
       flex-wrap: nowrap;
+      justify-content: flex-end;
     }
 
     &__content {
+      display: flex;
+      flex-direction: column;
       flex: 0 1 auto;
       order: 0;
       padding: 0 var(--gutter) 0 0;
+
+      &--vertical-center {
+        justify-content: center;
+      }
+  
+      &--vertical-bottom {
+        justify-content: flex-end;
+      }
+
+      &--horizontal-center {
+        align-items: center;
+
+        .split__text {
+          text-align: center;
+        }
+      }
+  
+      &--horizontal-right {
+        align-items: flex-end;
+
+        .split__text {
+          text-align: right;
+        }
+      }
+    }
+
+    &__title,
+    h2,
+    &__text {
+      margin: 10px 0;
+    }
+
+    .metas {
+      margin: 10px 0 0;
     }
 
     &__media {
@@ -86,6 +123,10 @@
     }
 
     &--reversed & {
+      &__wrapper {
+        justify-content: flex-start;
+      }
+      
       &__content {
         order: 1;
         padding: 0 0 0 var(--gutter);

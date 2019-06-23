@@ -24,7 +24,7 @@ sections:
         folder: img
         restrict: true
         max_files: 1
-        mode: grid
+        mode: list
         type: assets
         width: 33
         display: Icône
@@ -53,6 +53,14 @@ sections:
         type: colorpicker
         width: 33
         display: 'Couleur d''Accent'
+      show_social_medias:
+        options:
+          'true': Oui
+          'false': Non
+        inline: true
+        type: radio
+        width: 33
+        display: 'Afficher les réseaux sociaux'
       nav_label:
         type: section
         display: Navigation

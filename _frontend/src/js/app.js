@@ -26,6 +26,14 @@ class Site {
   initHubSwipers() {
     for (const hub of this.dom.hubSwipers) {
       new Swiper(hub, {
+        freeMode: true,
+        freeModeSticky: true,
+        freeModeMinimumVelocity: 0.4,
+        freeModeMomentumRatio: 0.28,
+        scrollbar: {
+          el: '.swiper-scrollbar',
+          draggable: true,
+        },
         slidesPerView: 1.2,
         slidesPerColumn: 2,
         spaceBetween: 10,
@@ -44,6 +52,7 @@ class Site {
         on: {
           imagesReady: () => {
             hub.parentNode.classList.add('is-ready');
+            hub.update();
           },
         },
       });
@@ -55,9 +64,27 @@ class Site {
       const swiper = new Swiper(gallery, {
         slidesPerView: 'auto',
         spaceBetween: 10,
+        freeMode: true,
+        freeModeSticky: true,
+        freeModeMinimumVelocity: 0.4,
+        freeModeMomentumRatio: 0.28,
+        breakpointsInverse: true,
+        breakpoints: {
+          768: {
+            spaceBetween: 20,
+          },
+          992: {
+            spaceBetween: 30,
+          },
+        },
+        scrollbar: {
+          el: '.swiper-scrollbar',
+          draggable: true,
+        },
         on: {
           imagesReady: () => {
             gallery.parentNode.classList.add('is-ready');
+            gallery.update();
           },
         },
       });
