@@ -24,38 +24,45 @@ class Site {
   }
 
   initHubSwipers() {
+    let settings = {
+      freeMode: true,
+      freeModeSticky: true,
+      freeModeMinimumVelocity: 0.4,
+      freeModeMomentumRatio: 0.28,
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true,
+      },
+      slidesPerView: 1.2,
+      slidesPerColumn: 2,
+      spaceBetween: 10,
+      breakpointsInverse: true,
+      breakpoints: {
+        576: {
+          slidesPerView: 1.5,
+        },
+        768: {
+          slidesPerView: 2.25,
+        },
+        992: {
+          slidesPerView: 3,
+        },
+      },
+    }
+
     for (const hub of this.dom.hubSwipers) {
-      new Swiper(hub, {
-        freeMode: true,
-        freeModeSticky: true,
-        freeModeMinimumVelocity: 0.4,
-        freeModeMomentumRatio: 0.28,
-        scrollbar: {
-          el: '.swiper-scrollbar',
-          draggable: true,
+      if(hub.parentNode.classList.contains('swiper--hub-square')) {
+        settings = { ...settings, slidesPerView: 'auto', breakpoints: {}}
+      } else if(hub.parentNode.classList.contains('swiper--hub-portrait')) {
+        settings = { ...settings, slidesPerView: 'auto', breakpoints: {}, slidesPerColumn: 1}
+      }
+
+      let hubSwiper = new Swiper(hub, {...settings, on: {
+        imagesReady: () => {
+          hub.parentNode.classList.add('is-ready');
+          hubSwiper.update();
         },
-        slidesPerView: 1.2,
-        slidesPerColumn: 2,
-        spaceBetween: 10,
-        breakpointsInverse: true,
-        breakpoints: {
-          576: {
-            slidesPerView: 1.5,
-          },
-          768: {
-            slidesPerView: 2.25,
-          },
-          992: {
-            slidesPerView: 3,
-          },
-        },
-        on: {
-          imagesReady: () => {
-            hub.parentNode.classList.add('is-ready');
-            hub.update();
-          },
-        },
-      });
+      }});
     }
   }
 

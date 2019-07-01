@@ -70,15 +70,15 @@
 
     &__content {
       display: flex;
-      flex-direction: column;
       flex: 0 1 auto;
+      flex-direction: column;
       order: 0;
       padding: 0 var(--gutter) 0 0;
 
       &--vertical-center {
         justify-content: center;
       }
-  
+
       &--vertical-bottom {
         justify-content: flex-end;
       }
@@ -90,7 +90,7 @@
           text-align: center;
         }
       }
-  
+
       &--horizontal-right {
         align-items: flex-end;
 
@@ -126,7 +126,7 @@
       &__wrapper {
         justify-content: flex-start;
       }
-      
+
       &__content {
         order: 1;
         padding: 0 0 0 var(--gutter);

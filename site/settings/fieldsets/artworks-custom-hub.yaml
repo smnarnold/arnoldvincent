@@ -2,6 +2,15 @@ sections:
   main:
     display: Main
     fields:
+      artwork-hub_format:
+        options:
+          landscape: Paysage
+          portrait: Portrait
+          square: Carré
+        type: select
+        width: 33
+        display: Format
+        default: landscape
       artworks_list:
         sort: 'title:asc'
         label: '{{ title }}'

@@ -30,5 +30,14 @@ sections:
         width: 33
         display: Limite
         default: '0'
+      artwork-hub_format:
+        options:
+          landscape: Paysage
+          portrait: Portrait
+          square: Carré
+        type: select
+        width: 33
+        display: Format
+        default: landscape
 taxonomies: false
 title: 'Artworks hub'

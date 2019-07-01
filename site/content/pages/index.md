@@ -1,3 +1,4 @@
+title: Accueil
 components:
   -
     type: artworks-custom-hub
@@ -14,6 +15,6 @@ components:
       - 43ed19b6-7e56-4947-8baa-af905cc0803c
       - 0ff9f7ed-c7bc-4042-8ecf-c6dd76ec8c74
       - fa27bb8e-502f-4613-aed8-a1fa3400aca4
-title: Accueil
+    artwork-hub_format: portrait
 fieldset: default
 id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7

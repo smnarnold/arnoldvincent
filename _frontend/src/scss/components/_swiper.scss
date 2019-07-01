@@ -52,10 +52,44 @@
     }
   }
 
-  &--hub {
+  &--hub,
+  &--hub-landscape {
     .swiper {
       &-slide {
         height: calc(50% - 10px);
+      }
+    }
+  }
+
+  &--hub-square {
+    .swiper {
+      &-slide {
+        width: calc(var(--main) / 2 - 10px);
+        height: calc(50% - 10px);
+      }
+    }
+  }
+
+  &--hub-portrait {
+    .swiper {
+      &-slide {
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    .card__media {
+      align-items: center;
+      display: flex;
+      height: 100%;
+      position: relative;
+
+      img {
+        display: block;
+        height: auto;
+        max-height: 100%;
+        position: relative;
+        width: auto;
       }
     }
   }
