@@ -5,8 +5,8 @@ sections:
       artwork-hub_format:
         options:
           landscape: Paysage
-          portrait: Portrait
           square: Carré
+          automatic: Automatique
         type: select
         width: 33
         display: Format

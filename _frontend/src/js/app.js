@@ -53,7 +53,7 @@ class Site {
     for (const hub of this.dom.hubSwipers) {
       if(hub.parentNode.classList.contains('swiper--hub-square')) {
         settings = { ...settings, slidesPerView: 'auto', breakpoints: {}}
-      } else if(hub.parentNode.classList.contains('swiper--hub-portrait')) {
+      } else if(hub.parentNode.classList.contains('swiper--hub-automatic')) {
         settings = { ...settings, slidesPerView: 'auto', breakpoints: {}, slidesPerColumn: 1}
       }
 

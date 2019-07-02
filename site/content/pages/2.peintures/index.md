@@ -6,6 +6,6 @@ components:
     artworks-hub_sort: 'artwork_year:desc'
     artworks-hub_limit: 0
     format: square
-    artwork-hub_format: square
+    artwork-hub_format: automatic
 fieldset: default
 id: 0506b916-7bcd-4439-9f60-83bc09897e5f
