@@ -1,0 +1,39 @@
+<div class="artworks-multiple artworks-multiple--{{ artworks-multiple_display }}">
+  {{ if artworks-multiple_type }}
+    {{ collection:artworks as="artwork" sort="{artworks-multiple_sort}" limit="{artworks-multiple_limit}" artwork_type:is="{artworks-multiple_type}" paginate="true" }}
+      {{ artwork }}
+        <div class="artworks-multiple__item" itemscope itemtype="http://schema.org/VisualArtwork" 
+             style="{{ if artwork_background_color }}--background: {{ artwork_background_color }}; {{ /if }}
+                    {{ if artwork_text_color }}--text: {{ artwork_text_color }}; {{ /if }}
+                    {{ if artwork_highlight_color }}--highlight: {{ artwork_highlight_color }};{{ /if }}
+                    background-color: var(--background); 
+                    color: var(--text);">
+          {{ components }}
+            {{ partial src="components/{type}" }}
+          {{ /components }}
+        </div>
+      {{ /artwork }}
+
+      {{ paginate }}
+        <div class="container text-center">
+          <a href="{{ prev_page }}">⬅ <span class="sr-only">Previous</span></a>
+
+          {{ current_page }} de {{ total_pages }}
+          <small>[{{ total_items }} résultats]</small>
+
+          <a href="{{ next_page }}"><span class="sr-only">Next</span> ➡</a>
+        </div>
+      {{ /paginate }}
+    {{ /collection:artworks }}
+  {{ else}}
+    {{ collection:artworks as="artwork" sort="{artworks-multiple_sort}" limit="{artworks-multiple_limit}" }}
+      {{ artwork }}
+        <div itemscope itemtype="http://schema.org/VisualArtwork">
+          {{ components }}
+            {{ partial src="components/{type}" }}
+          {{ /components }}
+        </div>
+      {{ /artwork }}
+    {{ /collection:artworks }}
+  {{/if}}
+</div>

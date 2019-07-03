@@ -1,0 +1,43 @@
+sections:
+  main:
+    display: Main
+    fields:
+      artworks-multiple_type:
+        max_items: '1'
+        sort: 'title:asc'
+        label: '{{ title }}'
+        collection:
+          - type-doeuvres
+        mode: tags
+        type: collection
+        width: 33
+        display: Type
+        instructions: '_(vide = tous types confondus)_'
+      artworks-multiple_sort:
+        options:
+          'artwork_year:desc': '+ récentes aux + anciennes'
+          'artwork_year:asc': '+ anciennes aux + récentes'
+          'title:asc': 'Ordre alphabétique (A-Z)'
+          'title:desc': 'Ordre alphabétique inverse (Z-A)'
+          random: Aléatoirement
+        type: select
+        instructions: 'Les afficher dans quelle ordre?'
+        width: 33
+        display: Ordre
+      artworks-multiple_limit:
+        type: integer
+        instructions: 'Combien d''oeuvres? _(0 = toutes)_'
+        width: 33
+        display: Limite
+        default: '0'
+        validate: 'min:1,max:9'
+      artworks-multiple_display:
+        options:
+          by-project: 'Par projet'
+          unified: Unifié
+        type: select
+        width: 33
+        display: Affichage
+        default: by-project
+taxonomies: false
+title: 'Artworks multiple'

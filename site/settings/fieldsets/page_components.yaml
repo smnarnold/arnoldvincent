@@ -23,6 +23,13 @@ sections:
                 fieldset: artworks-custom-hub
                 type: partial
                 display: 'Hub d''oeuvres personnalisé'
+          artworks-multiple:
+            display: 'Oeuvres multiple'
+            fields:
+              artworks-hub:
+                fieldset: artworks-multiple
+                type: partial
+                display: 'Oeuvres multiple'
           textblock:
             display: 'Bloc de texte'
             fields:
