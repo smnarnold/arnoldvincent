@@ -64,8 +64,8 @@
   &--hub-square {
     .swiper {
       &-slide {
-        width: calc(var(--main) / 2 - 10px);
         height: calc(50% - 10px);
+        width: calc(var(--main) / 2 - 10px);
       }
     }
   }

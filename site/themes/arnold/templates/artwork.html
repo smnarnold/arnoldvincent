@@ -2,4 +2,14 @@
   {{ components }}
     {{ partial src="components/{type}" }}
   {{ /components }}
+
+  <!-- <div class="container">
+    {{ collection:next in="artworks" as="posts" limit="1" sort="date:asc" }}
+      {{ posts }}<a href="{{ url }}">{{ title }}</a>{{ /posts }}
+    {{ /collection:next }}
+
+    {{ collection:previous in="artworks" as="posts" limit="1" sort="date:asc" }}
+      {{ posts }}<a href="{{ url }}">{{ title }}</a>{{ /posts }}
+    {{ /collection:previous }}
+  </div> -->
 <div>

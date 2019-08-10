@@ -47,28 +47,36 @@ class Site {
         992: {
           slidesPerView: 3,
         },
+        1200: {
+          slidesPerView: 4,
+        },
       },
-    }
+    };
 
     for (const hub of this.dom.hubSwipers) {
-      if(hub.parentNode.classList.contains('swiper--hub-square')) {
-        settings = { ...settings, slidesPerView: 'auto', breakpoints: {}}
-      } else if(hub.parentNode.classList.contains('swiper--hub-automatic')) {
-        settings = { ...settings, slidesPerView: 'auto', breakpoints: {}, slidesPerColumn: 1}
+      if (hub.parentNode.classList.contains('swiper--hub-square')) {
+        settings = { ...settings, slidesPerView: 'auto', breakpoints: {} };
+      } else if (hub.parentNode.classList.contains('swiper--hub-automatic')) {
+        settings = { ...settings, slidesPerView: 'auto', breakpoints: {}, slidesPerColumn: 1 };
       }
 
-      let hubSwiper = new Swiper(hub, {...settings, on: {
-        imagesReady: () => {
-          hub.parentNode.classList.add('is-ready');
-          hubSwiper.update();
+      let hubSwiper = new Swiper(hub, {
+        ...settings,
+        on: {
+          imagesReady: () => {
+            hub.parentNode.classList.add('is-ready');
+            if (typeof hubSwiper !== 'undefined') {
+              hubSwiper.update();
+            }
+          },
         },
-      }});
+      });
     }
   }
 
   initGallerySwipers() {
     for (const gallery of this.dom.gallerySwipers) {
-      const swiper = new Swiper(gallery, {
+      const gallerySwiper = new Swiper(gallery, {
         slidesPerView: 'auto',
         spaceBetween: 10,
         freeMode: true,
@@ -91,7 +99,9 @@ class Site {
         on: {
           imagesReady: () => {
             gallery.parentNode.classList.add('is-ready');
-            gallery.update();
+            if (typeof gallerySwiper !== 'undefined') {
+              gallerySwiper.update();
+            }
           },
         },
       });
@@ -104,7 +114,7 @@ class Site {
           'load',
           () => {
             counter += 1;
-            if (counter === imgs.length) swiper.update();
+            if (typeof gallerySwiper !== 'undefined' && counter === imgs.length) gallerySwiper.update();
           },
           false,
         );

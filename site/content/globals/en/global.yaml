@@ -5,5 +5,7 @@ lbl_exhibition: Exhibition
 lbl_medium: Medium
 lbl_teacher: Teacher
 lbl_on: 'on'
+lbl_prev: previous
+lbl_next: next
 artwork_teacher: Teacher
 id: d9bfc09a-3a90-41d3-8acc-3f551f8432af

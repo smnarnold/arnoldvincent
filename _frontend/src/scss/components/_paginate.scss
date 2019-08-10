@@ -1,0 +1,22 @@
+.paginate {
+  padding-top: var(--gutter, 20px);
+
+  a {
+    @extend %href;
+  }
+
+  &__btn {
+    &--disabled {
+      opacity: 0.25;
+      pointer-events: none;
+    }
+  }
+
+  &__prev {
+    margin-right: 1em;
+  }
+
+  &__next {
+    margin-left: 1em;
+  }
+}

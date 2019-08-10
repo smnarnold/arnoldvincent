@@ -12,44 +12,46 @@
 
     &--unified & {
       &__item {
+        /* stylelint-disable max-nesting-depth */
         &:nth-child(odd) {
           .split {
             &__wrapper {
               justify-content: flex-end !important;
             }
-      
+
             &__content {
               align-items: flex-end !important;
               order: 0 !important;
               padding: 0 var(--gutter) 0 !important;
             }
-  
+
             &__text {
               text-align: right !important;
             }
-      
+
             &__media {
               order: 1 !important;
             }
           }
         }
-  
+
         &:nth-child(even) {
           .split {
             &__wrapper {
               justify-content: flex-start !important;
             }
-      
+
             &__content {
               order: 1 !important;
               padding: 0 0 0 var(--gutter) !important;
             }
-      
+
             &__media {
               order: 0 !important;
             }
           }
         }
+        /* stylelint-enable */
       }
     }
   }

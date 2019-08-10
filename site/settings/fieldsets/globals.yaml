@@ -151,4 +151,14 @@ sections:
         localizable: true
         width: 25
         display: sur
+      lbl_prev:
+        type: text
+        localizable: true
+        width: 25
+        display: Précédent
+      lbl_next:
+        type: text
+        localizable: true
+        width: 25
+        display: Suivant
 taxonomies: true

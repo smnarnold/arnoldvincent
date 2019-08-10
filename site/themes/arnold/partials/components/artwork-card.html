@@ -9,7 +9,7 @@
           <source srcset="{{ glide:artwork_preview width='362' }}" media="(min-width: 993px)">
           <source srcset="{{ glide:artwork_preview width='300' }}" media="(min-width: 769px)">
           <source srcset="{{ glide:artwork_preview width='310' }}" media="(min-width: 575px)">
-          <img src="{{ glide:artwork_preview width='300' }}" width="{{ width }}px" height="{{ height}}px" alt="{{ alt }}" style="object-position: {{ focus | background_position }};" />
+          <img src="{{ glide:artwork_preview width='300' }}" width="{{ width }}px" height="{{ height}}px" alt="{{ alt }}" style="object-position: {{ focus | background_position }};" loading='lazy' />
       </picture>
     {{ /assets:artwork_preview }}
 
