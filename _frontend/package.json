@@ -21,7 +21,7 @@
     "@babel/preset-env": "^7.0.0",
     "babel-loader": "^8.0.2",
     "basil.js": "^0.4.10",
-    "browser-sync": "^2.24.7",
+    "browser-sync": "^2.29.3",
     "colors": "^1.3.2",
     "eslint-config-google": "^0.10.0",
     "fancy-log": "^1.3.2",
