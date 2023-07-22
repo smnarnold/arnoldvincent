@@ -17,7 +17,7 @@
     "slick": "./node_modules/slick-carousel/slick/slick.js"
   },
   "dependencies": {
-    "@babel/core": "^7.0.1",
+    "@babel/core": "^7.22.9",
     "@babel/preset-env": "^7.0.0",
     "babel-loader": "^8.0.2",
     "basil.js": "^0.4.10",
